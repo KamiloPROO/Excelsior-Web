@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200&family=Saira+Condensed:wght@100;200;300;400&display=swap');
 
 :root{
-    --green: hsl(244, 61%, 63%);
-    --lead: hsl(162, 2%, 56%);
+    --green: #ec94ff;
+    --lead: #220055;
     --blue: hsl(220, 85%, 57%);
-    --violet: #be77e8;
+    --violet: #ec94ff;
     --text-white: hsl(0, 0%, 100%);
     --text-light-gray: hsl(0, 0%, 90%);
     --body-bg-color: hsl(203, 67%, 2%);
