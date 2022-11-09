@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excelsior</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+
 
     <link rel="icon" href="./assets/images/logo rosa for all.png">
 <!--Material Icon-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 <!--STYLESHEET-->
-<link rel="stylesheet" href="./assets/css/style.css">
+
+<link rel="stylesheet" href="./assets/css/stylew.css">
 <link rel="stylesheet" href="./assets/css/estilos.css" >
 <!-- BOOTSTRAP -->
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
@@ -30,8 +33,8 @@
 </head>
 <body>
 
-    <div id="particles-js"></div>
-    <div class="container">
+    
+    <d  iv class="container">
         <aside>
             <div class="top">
                 <div class="logo">
@@ -55,11 +58,11 @@
                     <h3>Finances</h3>
                 </a>
 
-                <a href="team.html" ><span class="material-icons-sharp">
+                <a href="team.html"><span class="material-icons-sharp">
                     diversity_3</span>
                     <h3>Team</h3>
                 </a>
-                <a href="wallet.html" class="active"><span class="material-icons-sharp">
+                <a href="wallet.html"  class="active"><span class="material-icons-sharp">
                     account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
@@ -75,7 +78,7 @@
                     description</span>
                     <h3>Resources</h3>
                 </a>
-                <a href="support.html" ><span class="material-icons-sharp">
+                <a href="support.html"><span class="material-icons-sharp">
                     support_agent</span>
                     <h3>Support</h3>
                 </a>
@@ -90,34 +93,71 @@
  
         </aside>
 
-        <!-----------End of Aside------------>
+        <!-----------End of Aside------------> 
 
-        <main>
-        
-            <h1 >Wallet</h1>
-            <div class="vid">
-                <div class="video2">
-                    <video height="150px" width="760px" loop autoplay muted>
-                        <source src="BUCLEPARADASHBOARD.mp4" type="video/mp4" >
-                       </video>
+        <div class="form-content">
+            <div>
+                <br>
+                <h1 class="camilo" id="crearM">Crear Cuenta Tron</h1>
+                <h1 class="camiloOcultar" id="cuentaM">Cuenta Tron</h1>
+                <br>
+                <button type="button" class="btn camilo" id="crearCuentaTron">Crear Cuenta Tron</button>
+                <br>
+                <br>
+                <h2 class="camiloOcultar" id="respuesta">
+
                 </div>
-               </div>
-        </main>
+            
+            <div class="camiloOcultar" id="cuenta">
+                <div class="card ">
+                    <!-- <img class="imgCard" src="assets/images/card chip.png" alt="Avatar" style="width:20%"> -->
+                    <div class="containerCard ">
+                      <h3 id="respuestaReferencia">referencia</h3>
+                      <button type="button" class="btnCamilo correrBtn" id="copiarDireccion">Copiar Direccion</button>
+                      <h3 class="usdt">USDT</h3>
+                      <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
+                      <h3 class="trx">TRX</h3>
+                      <h3 id="respuestaSaldoTRX" class="moversaldos">referencia</h3>
+                      <h3 class="moversaldos">Creada</h3>
+                      <h3 id="respuestaCreada" class="moverfechas">referencia</h3>
+                      <h3 class="moversaldos">Actualizada</h3>
+                      <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
+                    </div>
+                  </div>
+            </div>
+                
+
+            
+
+            
+        </div>
 
 
     </div>
+ 
+
+ <script src="./assets/js/index.js"></script>
+ <script src="./assets/js/orders.js"></script>
+ <script src="./assets/js/app.js"></script>
+
+ <script src="creartron.js"></script>
+
+ <script src="./assets/js/logica/routes/routes.js"></script>
+
+<script src="./assets/js/logica/datos/cuentaTronDto.js"></script>
+<script src="./assets/js/logica/utils/HttpsClientCuentaTron.js"></script>
+<script src="./assets/js/logica/business/crearCuentaBussiness.js"></script>
+<script src="./assets/js/logica/controller/cuentaTronController.js"></script>
+<script src="./assets/js/logica/event/crearCuentaEvents.js"></script>
 
 
+ <script src="listartron.js"></script>
 
-<!-- Fondo Particles-->
-
-     
-
-
-<script src="./assets/js/index.js"></script>
-<script src="./assets/js/orders.js"></script>
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
+ <script src="./assets/js/logica/datos/listarTronDto.js"></script>
+<script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script>
+<script src="./assets/js/logica/business/listarCuentasBussiness.js"></script>
+<script src="./assets/js/logica/controller/listarTronController.js"></script>
+<script src="./assets/js/logica/event/listarCuentaEvents.js"></script>
 
 
 </body>

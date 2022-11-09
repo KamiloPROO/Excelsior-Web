@@ -1,5 +1,4 @@
 
-
 function verificarCode() {
 
     var celu = localStorage.getItem("txtPhone");

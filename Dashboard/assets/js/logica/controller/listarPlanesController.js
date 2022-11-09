@@ -1,0 +1,5 @@
+function ListarPlanesInvestor() {
+    
+    listarplanes();
+    
+}

@@ -5,23 +5,17 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
 
-                console.log(data.Id);
-                console.log(data);
+            if (data.Codigo === 200 ){
 
-                const idper = data.Id;
-
-              if (data.CodigoRespuesta === 200 ){
-
-                localStorage.setItem("idPersona",idper);
                 window.location.href = URL_API_BASE;
-                location.replace("Dash.html");
-                location.href ="Dash.html";
+                location.replace("Wallet.html");
+                location.href ="Wallet.html";
 
               }else{
                 Swal.fire({
                   icon: 'error',
                   title: 'Oops...',
-                  text: 'Usuario o Contraseña Incorrecta',
+                  text: 'No pudimos crear tu cuenta',
                 })
               };
         },
