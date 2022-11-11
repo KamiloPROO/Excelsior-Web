@@ -6,6 +6,8 @@ function CallEndPointPost(url, jsonArgs) {
         success: function (data) {
 
           console.log(data);
+
+          //   console.log(data[0].Id)
           // const button = document.getElementById("crearCuentaTron")
 
               // if (data.Codigo === 200 ){

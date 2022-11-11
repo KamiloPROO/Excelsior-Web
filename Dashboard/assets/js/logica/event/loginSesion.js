@@ -1,5 +1,6 @@
 // $("#inicioSesion").click(function () {
     const button = document.getElementById("iniciarSesion")
+    
     button.addEventListener("click", function(e){
         
         const user = document.getElementById("User").value

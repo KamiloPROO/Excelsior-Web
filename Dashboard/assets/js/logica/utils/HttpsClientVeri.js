@@ -7,8 +7,8 @@ function CallEndPointPost(url, jsonArgs) {
 
                 if (data === true ){
                 window.location.href = URL_API_BASE;
-                location.replace("Dash.html");
-                location.href ="Dash.html";
+                location.replace("index.html");
+                location.href ="index.html";
                 }else{
                     Swal.fire({
                         icon: 'error',

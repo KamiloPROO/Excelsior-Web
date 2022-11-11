@@ -262,7 +262,8 @@ a{
     box-shadow: 0 4px 8px 0 rgb(255, 0, 0);
     transition: 0.3s;
     display: block;
-    margin-left: 0px;
+    margin-left: 25%;
+    width: 46%;
     
   }
   
@@ -320,6 +321,11 @@ a{
 }
 
 .moverfechas{
-    margin-left: 60%;
-    width: 65%;
+    margin-left: 55%;
+    width: 70%;
+}
+
+.imgPlanes{
+width: 20%;
+right: 20%;
 }
