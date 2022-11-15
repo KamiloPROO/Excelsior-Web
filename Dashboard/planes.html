@@ -108,7 +108,16 @@
                 <br> -->
             </div>
 
-            
+            <!-- <div>
+                <br>
+                <h1 class="camilo" id="crearMe">ver planes</h1>
+                <br>
+                <button type="button" class="btn camilo" id="listarInversiones">Ver mis Planes</button>
+                <br>
+                <br>
+                <button type="button" class="btn camilo" id="listarInversiones">Ver Inversiones</button>
+                <br>
+            </div> -->
 
              
 
@@ -172,9 +181,9 @@
                   <button type="button" class="btn4 camilo" id="activarPlan2">Activar</button>
                 </div>
             
-         </div>
+            </div>
 
-         <div class="card5" id="plan3">
+            <div class="card5" id="plan3">
            
             <img src="assets/images/rosa.png" alt="Avatar" style="width:50%"> 
             <div class="">
@@ -195,6 +204,48 @@
 
 
           </div>
+
+            <!-- <div class="planess">
+            <div class="cardInversion" id="plan2">
+               
+                <img src="assets/images/ORANGE.png" alt="Avatar" style="width:50%"> 
+                <div class="">
+                  <h3 id="nomPlan2"><b>PROGRESS OF MY PLAN</b></h3>
+                  <br>
+                  <h4>Rendimiento Mensual %</h4>
+                  <h4 id="rendimientoInversion">6%</h4>
+                  <br>
+                  <h3 id="saldoIniPlanInversion">Saldo Inicial</h3>
+                  <h3 id="saldoFinPlanInversion">Saldo final</h3>
+                  <br>
+                  <h4>Amount Invested</h4>
+                  <h4 id="cantInvertidad">50 us</h4>
+                </div>
+            
+            </div>
+          </div> -->
+
+
+
+
+          <!-- <table style="width: 80%">
+
+             <thead>
+              <tr>
+                <th>Id</th>
+                <th>Rendimiento</th>
+                <th>Rango Ini</th>
+                <th>Rango fin</th>
+                <th>monto invertido</th>
+              </tr>
+             </thead>
+
+             <tbody id="response">
+
+             </tbody>
+
+          </table> -->
+
 
           <div class="planesss">
             <div class="card6" id="plan4">
@@ -378,6 +429,9 @@
                 </div>
             </div>
 
+            <!-- PRODUCTS LIST -->
+           <div id="product-list" class="cardsInversion"></div>
+
         </div> 
         
       
@@ -392,8 +446,15 @@
 
 <!-- Fondo Particles-->
 
+<!-- <script>
+
+const daticos = localStorage.getItem("datosInversion");
+
+
+</script> -->
      
 <script src="listarplanes.js"></script>
+<script src="ajax_respon.js"></script>
 <!-- <script src="guardarplan.js"></script> -->
 <!-- <script src="listarinversion.js"></script> -->
 
@@ -409,6 +470,12 @@
 
 <script src="./assets/js/logica/business/guardarInversionBussiness.js"></script>
 <script src="./assets/js/logica/controller/guardarInversionController.js"></script>
+
+
+<script src="./assets/js/logica/utils/HttpsClientLisInversion.js"></script>
+<script src="./assets/js/logica/business/listarInversionBussiness.js"></script>
+<script src="./assets/js/logica/controller/listarInversionController.js"></script>
+<script src="./assets/js/logica/event/listarInversionEvents.js"></script>
 
 <!-- <script src="./assets/js/index.js"></script>
 <script src="./assets/js/orders.js"></script> -->

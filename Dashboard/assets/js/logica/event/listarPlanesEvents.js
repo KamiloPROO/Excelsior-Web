@@ -99,7 +99,7 @@ buttonActPlan2.addEventListener("click", function(e){
     modalCPlan2.style.opacity = "1";
     modalCPlan2.style.visibility = "visible";
     modalPlan2.classList.toggle("modal-close-plan2");
-
+    
 });
 
 
@@ -220,7 +220,6 @@ comprarPlan1.addEventListener("click", function(){
 
     }
     
-
 
 })
 

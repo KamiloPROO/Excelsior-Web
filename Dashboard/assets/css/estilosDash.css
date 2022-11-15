@@ -448,6 +448,23 @@ a{
     width: 46%;
   }
 
+  .cardInversion{
+    box-shadow: 0 4px 8px 0 rgb(2, 19, 255);
+    transition: 0.3s;
+    display: flex;
+    overflow: hidden;
+    margin-left: 7%;
+    margin-top: 2%;
+    
+  }
+
+  .cardsInversion{
+    overflow: auto;
+    display: flex;
+    width: 500px;
+
+  }
+
   .imgCard{
     margin-left: 20px;
   }
@@ -508,6 +525,12 @@ a{
 
 .planesss{
 display: flex;
+}
+
+.planess{
+
+    width: 450px;
+    
 }
 
 /* plan blue */
