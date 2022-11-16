@@ -1,10 +1,12 @@
 .cardInversion{
-    box-shadow: 0 4px 8px 0 rgb(2, 19, 255);
+    box-shadow: 0 4px 18px 0 rgb(131, 132, 134);
     transition: 0.3s;
     display: flex;
     overflow: hidden;
+    background-color: rgba(93, 93, 94, 0.37);
     margin-left: 7%;
     margin-top: 2%;
+    border-radius: 5%;
     
   }
 

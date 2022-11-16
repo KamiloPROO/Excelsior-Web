@@ -19,7 +19,7 @@ function CallEndPointPostListInver(url, jsonArgs) {
               
                <img src="assets/images/BLUE.png" alt="Avatar" style="width:50%"> 
                <div class="">
-                 <h3 ><b style="color: rgb(10, 82, 236)">PROGRESS OF MY PLAN</b></h3>
+                 <h3 ><b>PROGRESS OF MY PLAN</b></h3>
                  <br>
                  <h3>Rendimiento Mensual %</h3>
                  <h3>${datos.Rendimiento}</h3>
