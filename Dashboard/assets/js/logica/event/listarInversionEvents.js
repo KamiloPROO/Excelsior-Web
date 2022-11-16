@@ -1,11 +1,11 @@
-const verInversiones = document.getElementById("listarInversiones")
+// const verInversiones = document.getElementById("listarInversiones")
 
-verInversiones.addEventListener("click", function(e){
+// verInversiones.addEventListener("click", function(e){
 
 
-    // document.getElementById('crearMe').style.display = 'none'
-    verInversiones.style.display = 'none'
+//     document.getElementById('crearMe').style.display = 'none'
+//     verInversiones.style.display = 'none'
 
-    listarInversion();
+//     listarInversion();
 
-})
+// })

@@ -386,18 +386,19 @@ a{
 
 
  .card {
-    box-shadow: 0 4px 8px 0 rgb(255, 0, 0);
+    box-shadow: 0 4px 8px 0 rgb(247, 121, 3);
     transition: 0.3s;
-    display: block;
+    display: flex;
     margin-left: 25%;
     width: 46%;
+    overflow: hidden;
     
   }
   
   .card2{
     box-shadow: 0 4px 8px 0 rgb(10, 82, 236);
     transition: 0.3s;
-    display: none;
+    display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
@@ -406,7 +407,7 @@ a{
   .card3{
     box-shadow: 0 4px 8px 0 rgb(52, 207, 73);
     transition: 0.3s;
-    display: none;
+    display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
@@ -415,7 +416,7 @@ a{
   .card4{
     box-shadow: 0 4px 8px 0 rgb(228, 85, 18);
     transition: 0.3s;
-    display: none;
+    display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
@@ -424,7 +425,7 @@ a{
   .card5{
     box-shadow: 0 4px 8px 0 rgb(235, 22, 199);
     transition: 0.3s;
-    display: none;
+    display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
@@ -433,7 +434,7 @@ a{
   .card6{
     box-shadow: 0 4px 8px 0 rgb(235, 22, 22);
     transition: 0.3s;
-    display: none;
+    display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
@@ -442,7 +443,7 @@ a{
   .card7{
     box-shadow: 0 4px 8px 0 rgb(70, 175, 245);
     transition: 0.3s;
-    display: none;
+    display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
@@ -470,15 +471,40 @@ a{
   }
  
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgb(241, 8, 8);
+    box-shadow: 0 8px 16px 0 rgb(241, 148, 8);
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 rgb(10, 82, 236);
+  }
+  
+  .card3:hover {
+    box-shadow: 0 8px 16px 0 rgb(52, 207, 73);
+  }
+  
+  .card4:hover {
+    box-shadow: 0 8px 16px 0 rgb(228, 85, 18);
+  }
+  
+  .card5:hover {
+    box-shadow: 0 8px 16px 0 rgb(235, 22, 199);
+  }
+  
+  .card6:hover {
+    box-shadow: 0 8px 16px 0 rgb(235, 22, 22);
+  }
+  
+  .card7:hover {
+    box-shadow: 0 8px 16px 0 rgb(70, 175, 245);
   }
   
   
   .containerCard {
     padding: 2px 16px;
     margin-right: 100px;
-    
   }
+
+
 
   .btnCamilo{
     height: 30px;
@@ -505,21 +531,21 @@ a{
 .usdt{
     background-color: green;
     width: 25%;
-    margin-left: 100%;
+    margin-left: 80%;
 }
 
 .trx{
     background-color: red;
     width: 25%;
-    margin-left: 100%;
+    margin-left: 80%;
 }
 
 .moversaldos{
-    margin-left: 100%;
+    margin-left: 80%;
 }
 
 .moverfechas{
-    margin-left: 55%;
+    margin-left: 35%;
     width: 70%;
 }
 

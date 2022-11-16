@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excelsior</title>
-    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <!-- <link rel="stylesheet" href="./assets/css/estilos.css"> -->
 
 
     <link rel="icon" href="./assets/images/logo rosa for all.png">
@@ -34,7 +34,7 @@
 <body>
 
     
-    <d  iv class="container">
+    <d  iv class="container container_wallet" id="container_wallet">
         <aside>
             <div class="top">
                 <div class="logo">
@@ -62,7 +62,7 @@
                     diversity_3</span>
                     <h3>Team</h3>
                 </a>
-                <a href="wallet.html"  class="active"><span class="material-icons-sharp">
+                <a id="crearCuentaTron" class="active"><span class="material-icons-sharp">
                     account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
@@ -98,18 +98,18 @@
         <div class="form-content">
             <div>
                 <br>
-                <h1 class="camilo" id="crearM">Crear Cuenta Tron</h1>
-                <h1 class="camiloOcultar" id="cuentaM">Cuenta Tron</h1>
-                <br>
-                <button type="button" class="btn camilo" id="crearCuentaTron">Crear Cuenta Tron</button>
+                <!-- <h1 class="camilo" id="crearM">Crear Cuenta Tron</h1> -->
+                <h1  id="cuentaM">Cuenta Tron</h1>
+                <!-- <br>
+                <button type="button" class="btn camilo" id="crearCuentaTron">Crear Cuenta Tron</button> -->
                 <br>
                 <br>
                 <h2 class="camiloOcultar" id="respuesta">
 
                 </div>
             
-            <div class="camiloOcultar" id="cuenta">
-                <div class="card ">
+            <div  id="cuenta">
+                <div class="card" style="background:url(./assets/images/card\ chip.png);background-repeat: no-repeat;background-size: cover;">
                     <!-- <img class="imgCard" src="assets/images/card chip.png" alt="Avatar" style="width:20%"> -->
                     <div class="containerCard ">
                       <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
@@ -136,28 +136,34 @@
     </div>
  
 
- <script src="./assets/js/index.js"></script>
+    
+ <!-- <script src="./assets/js/index.js"></script> -->
  <script src="./assets/js/orders.js"></script>
- <script src="./assets/js/app.js"></script>
+ <!-- <script src="./assets/js/app.js"></script> -->
 
- <script src="creartron.js"></script>
+ <!-- <script src="creartron.js"></script> -->
 
- <script src="./assets/js/logica/routes/routes.js"></script>
+ <!-- <script src="./assets/js/logica/routes/routes.js"></script>
 
 <script src="./assets/js/logica/datos/cuentaTronDto.js"></script>
 <script src="./assets/js/logica/utils/HttpsClientCuentaTron.js"></script>
 <script src="./assets/js/logica/business/crearCuentaBussiness.js"></script>
 <script src="./assets/js/logica/controller/cuentaTronController.js"></script>
-<script src="./assets/js/logica/event/crearCuentaEvents.js"></script>
+<script src="./assets/js/logica/event/crearCuentaEvents.js"></script> -->
 
 
- <script src="listartron.js"></script>
+ <!-- <script src="listartron.js"></script> -->
 
- <script src="./assets/js/logica/datos/listarTronDto.js"></script>
-<script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script>
-<script src="./assets/js/logica/business/listarCuentasBussiness.js"></script>
-<script src="./assets/js/logica/controller/listarTronController.js"></script>
+ <!-- <script src="./assets/js/logica/datos/listarTronDto.js"></script> -->
+
+
+ <!-- <script src="./assets/js/logica/holaputo.js"></script> -->
+
+<script src="./assets/js/logica/routes/routes.js"></script>
 <script src="./assets/js/logica/event/listarCuentaEvents.js"></script>
+<script src="./assets/js/logica/controller/listarTronController.js"></script>
+<script src="./assets/js/logica/business/listarCuentasBussiness.js"></script>
+<script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script>
 
 
 </body>

@@ -9,20 +9,20 @@ const buttonActPlan5 = document.getElementById("activarPlan5")
 
 
 // events  btn activar
-button.addEventListener("click", function(e){
+// button.addEventListener("click", function(e){
 
-    document.getElementById('plan').style.display = 'flex'
-    document.getElementById('plan1').style.display = 'flex'
-    document.getElementById('plan2').style.display = 'flex'
-    document.getElementById('plan3').style.display = 'flex'
-    document.getElementById('plan4').style.display = 'flex'
-    document.getElementById('plan5').style.display = 'flex'
+//     document.getElementById('plan').style.display = 'flex'
+//     document.getElementById('plan1').style.display = 'flex'
+//     document.getElementById('plan2').style.display = 'flex'
+//     document.getElementById('plan3').style.display = 'flex'
+//     document.getElementById('plan4').style.display = 'flex'
+//     document.getElementById('plan5').style.display = 'flex'
 
-    button.style.display = 'none'
+//     button.style.display = 'none'
 
-    ListarPlanesInvestor()
+//     ListarPlanesInvestor()
 
-})
+// })
 
 
 // constantes model
@@ -198,10 +198,6 @@ window.addEventListener("click", function(e){
 
 comprarPlan1.addEventListener("click", function(){
 
-    var idPlan = localStorage.getItem("idPlan0");
-
-    alert("tu plan id es " + idPlan);
-
     const montoplan1 = document.getElementById("montoOperarPlan0").value
 
 
@@ -217,17 +213,13 @@ comprarPlan1.addEventListener("click", function(){
     }else{
 
         GuardarPlanActivado()
-
+        
     }
     
 
 })
 
 comprarPlan2.addEventListener("click", function(){
-
-    var idPlan = localStorage.getItem("idPlan1");
-
-    alert("tu plan id es " + idPlan)
 
     const montoplan1 = document.getElementById("montoOperarPlan1").value
 
@@ -251,9 +243,6 @@ comprarPlan2.addEventListener("click", function(){
 
 comprarPlan3.addEventListener("click", function(){
 
-    var idPlan = localStorage.getItem("idPlan2");
-
-    alert("tu plan id es " + idPlan)
 
     const montoplan1 = document.getElementById("montoOperarPlan2").value
 
@@ -277,9 +266,6 @@ comprarPlan3.addEventListener("click", function(){
 
 comprarPlan4.addEventListener("click", function(){
 
-    var idPlan = localStorage.getItem("idPlan3");
-
-    alert("tu plan id es " + idPlan)
 
     const montoplan1 = document.getElementById("montoOperarPlan3").value
 
@@ -303,9 +289,6 @@ comprarPlan4.addEventListener("click", function(){
 
 comprarPlan5.addEventListener("click", function(){
 
-    var idPlan = localStorage.getItem("idPlan4");
-
-    alert("tu plan id es " + idPlan)
 
     const montoplan1 = document.getElementById("montoOperarPlan4").value
 
@@ -329,9 +312,6 @@ comprarPlan5.addEventListener("click", function(){
 
 comprarPlan6.addEventListener("click", function(){
 
-    var idPlan = localStorage.getItem("idPlan5");
-
-    alert("tu plan id es " + idPlan)
 
     const montoplan1 = document.getElementById("montoOperarPlan5").value
 

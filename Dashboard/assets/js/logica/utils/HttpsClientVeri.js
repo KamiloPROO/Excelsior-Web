@@ -7,8 +7,8 @@ function CallEndPointPost(url, jsonArgs) {
 
                 if (data === true ){
                 window.location.href = URL_API_BASE;
-                location.replace("index.html");
-                location.href ="index.html";
+                location.replace("signIn.html");
+                location.href ="signIn.html";
                 }else{
                     Swal.fire({
                         icon: 'error',
