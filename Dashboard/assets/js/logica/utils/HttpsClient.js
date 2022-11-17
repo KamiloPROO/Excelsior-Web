@@ -13,25 +13,21 @@ function CallEndPointPost(url, jsonArgs) {
 
                 console.log(name);
 
-              //  const element = document.getElementById("name")
+              // if (data.CodigoRespuesta === 200 ){
 
-              //   element.textContent = `${data.PrimerNombre}`
+              //   localStorage.setItem("idPersona",idper);
+              //   localStorage.setItem("PrimerNombre",name);
+              //   window.location.href = URL_API_BASE;
+              //   location.replace("Dash.html");
+              //   location.href ="Dash.html";
 
-              if (data.CodigoRespuesta === 200 ){
-
-                localStorage.setItem("idPersona",idper);
-                localStorage.setItem("PrimerNombre",name);
-                window.location.href = URL_API_BASE;
-                location.replace("Dash.html");
-                location.href ="Dash.html";
-
-              }else{
-                Swal.fire({
-                  icon: 'error',
-                  title: 'Oops...',
-                  text: 'Usuario o Contraseña Incorrecta',
-                })
-              };
+              // }else{
+              //   Swal.fire({
+              //     icon: 'error',
+              //     title: 'Oops...',
+              //     text: 'Usuario o Contraseña Incorrecta',
+              //   })
+              // };
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            

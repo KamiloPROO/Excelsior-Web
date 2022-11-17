@@ -49,8 +49,9 @@ document.addEventListener('DOMContentLoaded', e => {
 
   var idpersona = localStorage.getItem("idPersona");
 
-  var namee = localStorage.getItem("PrimerNombre")
   const nombre = document.getElementById("name")
+  var namee = localStorage.getItem("PrimerNombre")
+ 
       
   nombre.textContent = namee;
 
