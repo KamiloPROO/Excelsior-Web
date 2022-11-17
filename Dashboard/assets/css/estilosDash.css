@@ -4,6 +4,8 @@
     --green: #ec94ff;
     --lead: #220055;
     --verde: #40992e;
+    --gris: rgba(49, 49, 49, 0.685);
+    --grisos:rgba(15, 15, 15, 0.685);
     --orange: #db5019;
     --rojo: #b60c0c;
     --aqua: #1591caf1;
@@ -386,11 +388,12 @@ a{
 
 
  .card {
-    box-shadow: 0 4px 8px 0 rgb(247, 121, 3);
+    box-shadow: 0 6px 10px 0 rgb(117, 117, 117);
     transition: 0.3s;
     display: flex;
     margin-left: 25%;
     width: 46%;
+    border-radius: 10px;
     overflow: hidden;
     
   }
@@ -402,6 +405,7 @@ a{
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
+    overflow: hidden;
   }
 
   .card3{
@@ -411,6 +415,7 @@ a{
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
+    overflow: hidden;
   }
 
   .card4{
@@ -420,6 +425,7 @@ a{
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
+    overflow: hidden;
   }
 
   .card5{
@@ -429,6 +435,7 @@ a{
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
+    overflow: hidden;
   }
 
   .card6{
@@ -438,6 +445,7 @@ a{
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
+    overflow: hidden;
   }
 
   .card7{
@@ -447,6 +455,7 @@ a{
     margin-left: 3%;
     margin-top: 2%;
     width: 46%;
+    overflow: hidden;
   }
 
   .cardInversion{
@@ -454,7 +463,7 @@ a{
     transition: 0.3s;
     display: flex;
     overflow: hidden;
-    margin-left: 7%;
+    /* margin-left: 7%; */
     margin-top: 2%;
     
   }
@@ -463,6 +472,7 @@ a{
     overflow: auto;
     display: flex;
     width: 500px;
+    /* position: relative; */
 
   }
 
@@ -471,7 +481,7 @@ a{
   }
  
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgb(241, 148, 8);
+    box-shadow: 0 8px 16px 0 rgb(121, 120, 119);
   }
   
   .card2:hover {
@@ -500,6 +510,7 @@ a{
   
   
   .containerCard {
+    position: relative;
     padding: 2px 16px;
     margin-right: 100px;
   }
@@ -508,7 +519,7 @@ a{
 
   .btnCamilo{
     height: 30px;
-    width: 40%;
+    width: 30%;
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
@@ -516,7 +527,7 @@ a{
     cursor:  pointer;
     border-radius: 25px;
     user-select: none;
-    background: linear-gradient(to right, var(--lead), var(--blue));
+    background: linear-gradient(to right, var(--gris), var(--gris));
     border: none;
     color: var(--text-white);
     position: relative;
@@ -525,7 +536,8 @@ a{
   }
 
   .correrBtn{
-    margin-left: 300px;
+    margin-left: auto;
+    padding: 1%;
   }
 
 .usdt{
@@ -554,9 +566,7 @@ display: flex;
 }
 
 .planess{
-
     width: 450px;
-    
 }
 
 /* plan blue */
@@ -574,6 +584,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .modal{
@@ -588,6 +599,7 @@ display: flex;
     transition: transform 0.8s;
     transform: translateY(0%);
     border-radius: 10px;
+    overflow: hidden;
     
 }
 
@@ -629,6 +641,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .modal-plan1{
@@ -643,6 +656,7 @@ display: flex;
     transition: transform 0.8s;
     transform: translateY(0%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .close-plan1{
@@ -657,6 +671,7 @@ display: flex;
     line-height: 25px;
     cursor: pointer;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .modal-close-plan1{
@@ -683,6 +698,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .modal-plan2{
@@ -697,6 +713,7 @@ display: flex;
     transition: transform 0.8s;
     transform: translateY(0%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .close-plan2{
@@ -711,6 +728,7 @@ display: flex;
     line-height: 25px;
     cursor: pointer;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .modal-close-plan2{
@@ -737,6 +755,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .modal-plan3{
@@ -751,6 +770,7 @@ display: flex;
     transition: transform 0.8s;
     transform: translateY(0%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .close-plan3{
@@ -765,6 +785,7 @@ display: flex;
     line-height: 25px;
     cursor: pointer;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .modal-close-plan3{
@@ -792,6 +813,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .modal-plan4{
@@ -806,6 +828,7 @@ display: flex;
     transition: transform 0.8s;
     transform: translateY(0%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .close-plan4{
@@ -820,6 +843,7 @@ display: flex;
     line-height: 25px;
     cursor: pointer;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .modal-close-plan4{
@@ -847,6 +871,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .modal-plan5{
@@ -861,6 +886,7 @@ display: flex;
     transition: transform 0.8s;
     transform: translateY(0%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .close-plan5{
@@ -895,3 +921,79 @@ display: flex;
 .titulos{
    margin-top: 5px;
 }
+/*
+STYLE OF PLANS VIEW
+*/
+
+.containerplanes{
+    width: 100%;
+    display: flex ;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+/* .carrrr1{
+    background-color: red;
+    width: 50% !important;
+}
+.carrrr2{
+    background-color: blue;
+    width: 50% !important;
+} */
+
+@media (max-width: 1024px) {
+.planesss{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-flex;
+    
+}
+
+.modal{
+    width: 60%;
+    height: auto;
+}
+
+.modal-plan1{
+    width: 60%;
+    height: auto;
+}
+
+.modal-plan2{
+    width: 60%;;
+}
+
+.modal-plan3{
+    width: 60%;
+}
+
+.modal-plan4{
+    width: 60%;;
+}
+
+.modal-plan5{
+    width: 60%;;
+}
+    
+}
+
+@media (max-width: 768px) {
+    .planesss{
+        width: 110%;
+        margin-left: 10%;
+        display: inline-flex;
+        
+    }
+        
+    }
+
+    @media (max-width: 425px) {
+        .planesss{
+            width: 300%;
+            margin-left: 20%;
+            display: inline-block;
+            
+        }
+            
+        }

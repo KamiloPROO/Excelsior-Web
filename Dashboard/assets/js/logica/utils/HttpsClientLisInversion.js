@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', e => {
        <div class="planess">
        <div class="cardInversion" id="plan2">
           
-           <img src="assets/images/BLUE.png" alt="Avatar" style="width:50%"> 
+           <img src="assets/images/GREEN.png" alt="Avatar" style="width:50%"> 
            <div class="">
              <h3 ><b>PROGRESS OF MY PLAN</b></h3>
              <br>

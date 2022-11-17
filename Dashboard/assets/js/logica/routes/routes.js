@@ -1,5 +1,5 @@
 const URL_API_BASE = "http://52.175.225.67:8085";
-const URL_API_BASE_USUARIOS = "http://52.175.225.67:8082/api/Persona";
+const URL_API_BASE_USUARIOS = "https://excelsiortrader.app/api/Persona";
 const URL_API_BASE_REGISTRO = "http://52.175.225.67:8082/api/persona";
 const URL_API_BASE_VERIFICAR = "http://52.175.225.67:8082/api/Persona";
 const URL_API_BASE_CREAR_TRON = "http://52.175.225.67:8085/api/CuentaTron";
