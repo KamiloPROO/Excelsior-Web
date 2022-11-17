@@ -11,7 +11,7 @@ function CallEndPointPost(url, jsonArgs) {
                 // const idper = data.Id;
                 const name = data.PrimerNombre;
 
-                console.log(name);
+                console.log("holaaaaaaa", name);
 
               // if (data.CodigoRespuesta === 200 ){
 
