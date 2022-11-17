@@ -1,12 +1,12 @@
-const URL_API_BASE = "http://52.175.225.67:8085";
+const URL_API_BASE = "http://52.175.225.67:63203";
 const URL_API_BASE_USUARIOS = "https://excelsiortrader.app/api/Persona";
 const URL_API_BASE_REGISTRO = "http://52.175.225.67:8082/api/persona";
 const URL_API_BASE_VERIFICAR = "http://52.175.225.67:8082/api/Persona";
-const URL_API_BASE_CREAR_TRON = "http://52.175.225.67:8085/api/CuentaTron";
-const URL_API_BASE_LISTAR_TRON = "http://52.175.225.67:8085/api/CuentaTron";
-const URL_API_BASE_LISTAR_PLANES = "http://52.175.225.67:8085/api/TiposMembresia";
-const URL_API_BASE_LISTAR_PLAN_ACTIVADO = "http://52.175.225.67:8085/api/Inversiones";
-const URL_API_BASE_GUARDAR_PLAN_ACTIVO = "http://52.175.225.67:8085/api/TiposMembresia";
+const URL_API_BASE_CREAR_TRON = "http://52.175.225.67:63203/api/CuentaTron";
+const URL_API_BASE_LISTAR_TRON = "http://52.175.225.67:63203/api/CuentaTron";
+const URL_API_BASE_LISTAR_PLANES = "http://52.175.225.67:63203/api/TiposMembresia";
+const URL_API_BASE_LISTAR_PLAN_ACTIVADO = "http://52.175.225.67:63203/api/Inversiones";
+const URL_API_BASE_GUARDAR_PLAN_ACTIVO = "http://52.175.225.67:63203/api/TiposMembresia";
 
 const URL_API_LOGIN_USUARIOS = URL_API_BASE_USUARIOS + "/IniciarSesion";
 const URL_API_REGIS_USUARIOS = URL_API_BASE_REGISTRO + "/CrearPersona";

@@ -49,9 +49,16 @@ document.addEventListener('DOMContentLoaded', e => {
 
   var idpersona = localStorage.getItem("idPersona");
 
+  var namee = localStorage.getItem("PrimerNombre")
+  const nombre = document.getElementById("name")
+      
+  nombre.textContent = namee;
+
+  console.log(namee);
+
   $.ajax({
     type: "POST",
-    url: "http://52.175.225.67:8085/api/Inversiones/ListarMisInversiones",
+    url: "http://52.175.225.67:63203/api/Inversiones/ListarMisInversiones",
     data: {"IdPersona":idpersona},
     success: function (data) {
 
@@ -61,8 +68,10 @@ document.addEventListener('DOMContentLoaded', e => {
 
        const productList = document.getElementById("product-list");
        const element = document.createElement("div")
-
+       
       
+       console.log(namee);
+
        element.innerHTML += `
        <div class="planess">
        <div class="cardInversion" id="plan2">

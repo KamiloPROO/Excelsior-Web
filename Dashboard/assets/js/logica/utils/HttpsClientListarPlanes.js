@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "GET",
-        url: "http://52.175.225.67:8085/api/TiposMembresia/ListarTiposMembresia",
+        url: "http://52.175.225.67:63203/api/TiposMembresia/ListarTiposMembresia",
         data: "",
         success: function (data) {
 

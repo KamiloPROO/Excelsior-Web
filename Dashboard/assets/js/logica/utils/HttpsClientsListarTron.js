@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
         $.ajax({
             type: "POST",
-            url: "http://52.175.225.67:8085/api/CuentaTron/ListarCuentasTron",
+            url: "http://52.175.225.67:63203/api/CuentaTron/ListarCuentasTron",
             data: {"IdPersona":idpersona},
             success: function (data) {
     
