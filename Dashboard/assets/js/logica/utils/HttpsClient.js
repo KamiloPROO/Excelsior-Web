@@ -8,7 +8,7 @@ function CallEndPointPost(url, jsonArgs) {
                 console.log(data.Id);
                 console.log(data);
 
-                const idper = data.Id;
+                // const idper = data.Id;
                 const name = data.PrimerNombre;
 
                 console.log(name);
