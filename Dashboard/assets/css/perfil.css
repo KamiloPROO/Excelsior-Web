@@ -1,0 +1,323 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    overflow: auto;
+    background-color: #1b1b1b;
+    /* box-shadow: 0px 10px 10px 0px rgba(245, 243, 243, 0.4); */
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #fff;;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #ec94ff;
+    background-color: #29292bc2;
+  }
+
+  .btnPerfil{
+    background-color: #ec94ff;
+    width: 180px;
+    height: 40px;
+    margin-left: 10%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .containerPerfil{
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+  }
+
+  .cardPerfil {
+    box-shadow: 0 4px 8px 0 rgb(10, 82, 236);
+    transition: 0.3s;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 2%;
+    width: 46%;
+    overflow: hidden;
+}
+
+.cardPerfil:hover {
+  box-shadow: 0 8px 16px 0 rgb(10, 82, 236);
+}
+
+.cardperfil {
+    display: block;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.perilnom{
+    display: flex;
+    margin-left: 18%;
+}
+
+.btnContra{
+    display: flex;
+    margin-left: 1%;
+}
+
+.btnCamilo {
+    height: 30px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: rgb(255, 115, 0);
+    border: none;
+    color: var(--text-white);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.btnCamilo2 {
+    height: 40px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: blue;
+    border: none;
+    color: var(--text-white);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.btnCamiloCambiar2{
+  height: 40px;
+  width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 25px;
+  user-select: none;
+  background: blue;
+  border: none;
+  color: var(--text-white);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-left: 18%;
+}
+
+
+/* pop pap */
+
+.modal-containerPerfil {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  transition: 0.3s;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modalPerfil {
+  width: 40%;
+  height: auto;
+  background: rgb(17, 17, 17);
+  box-shadow: 0 4px 8px 0 rgb(10, 82, 236);
+  text-align: center;
+  display: block;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 0.8s;
+  transform: translateY(0%);
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.closePeril {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #b60c0c;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal-closePerfil {
+  transform: translateY(-200%);
+}
+
+/* .modalPerfil>img {
+  height: 70px;
+  width: 60%;
+
+} */
+
+@media (max-width: 1024px) {
+  .cardPerfil {
+      width: 60%;
+      margin-left: 5%;
+      display: inline-flex;
+
+  }
+
+  .modal {
+      width: 60%;
+      height: auto;
+  }
+
+  .modal-plan1 {
+      width: 60%;
+      height: auto;
+  }
+
+  .modal-plan2 {
+      width: 60%;
+      height: auto;
+  }
+
+  .modal-plan3 {
+      width: 60%;
+      height: auto;
+  }
+
+  .modal-plan4 {
+      width: 60%;
+      height: auto;
+  }
+
+  .modal-plan5 {
+      width: 60%;
+      height: auto;
+  }
+
+
+  /* card wallet */
+
+  .card {
+      width: 63%;
+      margin-left: 12%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .cardPerfil {
+      width: 110%;
+      margin-left: -100%;
+      margin-top: 10%;
+      display: inline-flex;
+
+  }
+
+  .card {
+      width: 75%;
+      margin-left: 20%;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .cardPerfil {
+      width: 180%;
+      margin-right: 0%;
+      display: inline-block;
+
+  }
+
+  .card {
+      width: 100%;
+      display: block;
+      margin-left: 10%;
+  }
+
+  .moverRefe {
+      width: 150%;
+      overflow: auto;
+  }
+
+  .btnCamilo {
+      height: 30px;
+      width: 60%;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      font-family: inherit;
+      cursor: pointer;
+      border-radius: 25px;
+      user-select: none;
+      background: #fca503;
+      border: none;
+      color: var(--text-white);
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+
+  }
+
+  .correrBtn {
+      margin-left: 4 0%;
+      padding: 1%;
+  }
+
+  .usdt {
+      background-color: green;
+      width: 25%;
+      margin-left: 80%;
+  }
+
+  .trx {
+      background-color: red;
+      width: 25%;
+      margin-left: 80%;
+  }
+
+  .moversaldos {
+      margin-left: 80%;
+  }
+
+  .moverfechas {
+      margin-left: 35%;
+      width: 70%;
+  }
+}

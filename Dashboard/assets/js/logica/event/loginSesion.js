@@ -6,6 +6,8 @@
         const user = document.getElementById("User").value
         const contrasenia = document.getElementById("Password").value
 
+        localStorage.setItem("txtPhone",user)
+
         if ( user === null || user === "" ){
 
             Swal.fire({

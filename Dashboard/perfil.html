@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excelsior</title>
-    <!-- <link rel="stylesheet" href="./assets/css/estilos.css"> -->
-
 
     <link rel="icon" href="./assets/images/logo rosa for all.png">
     <!--Material Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <!--STYLESHEET-->
-
     <link rel="stylesheet" href="./assets/css/stylew.css">
     <link rel="stylesheet" href="./assets/css/estilosDash.css">
+    <link rel="stylesheet" href="./assets/css/person.css">
+    <link rel="stylesheet" href="./assets/css/progress.css">
+    <link rel="stylesheet" href="./assets/css/perfil.css">
     <!-- BOOTSTRAP -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
 
@@ -39,8 +39,8 @@
 
 <body>
 
-
-    <d iv class="container container_wallet" id="container_wallet">
+    <div id="particles-js"></div>
+    <div class="container">
         <aside>
             <div class="top">
                 <div class="logo">
@@ -68,11 +68,11 @@
                         diversity_3</span>
                     <h3>Team</h3>
                 </a>
-                <a id="crearCuentaTronPutooo" class="active"><span class="material-icons-sharp">
+                <a href="wallet.html"><span class="material-icons-sharp">
                         account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
-                <a href="planes.html"><span class="material-icons-sharp">
+                <a href="planes.html" id="listarPlanes2"><span class="material-icons-sharp">
                         local_mall</span>
                     <h3>Planes</h3>
                 </a>
@@ -89,7 +89,7 @@
                     <h3>Support</h3>
                 </a>
 
-                <a href="index.html"><span class="material-icons-sharp">
+                <a href="index.html" style="width: 10%"><span class="material-icons-sharp">
                         logout</span>
                     <h3>Logout</h3>
                 </a>
@@ -99,86 +99,104 @@
 
         </aside>
 
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+            </div>
+        </div>
+
+
         <!-----------End of Aside------------>
 
         <div class="form-content">
             <div>
-                <br>
-                <!-- <h1 class="camilo" id="crearM">Crear Cuenta Tron</h1> -->
-                <h1 id="cuentaM">Cuenta Tron</h1>
-                <br>
-                <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
-                <br>
-                <br>
-                <h2 class="camiloOcultar" id="respuesta">
+              <br>
+              <h1 class="camilo" id="crearM">Perfil</h1>
+      
+              <div class="cardPerfil">
+                <div class="cardperfil" id="plan">
+      
+                  <img src="assets/images/white-logo.svg" alt="Avatar" style="width:80%; border-radius: 30%; padding: 20px; margin-left: 10%;">
+                  <div style="padding: 10px;">
+                    <br>
+                    <br>
+                    <div class="perilnom">
+                    <h3 id="nombrePerfil"><b>JUAN CAMILO</b></h3>
+                    <h3 id="apellidoPerfil" style="padding-left: 2%;"><b>GOMEZ</b></h3>
+                    </div>
+                    <br>
+                    <h3 id="fecha_nacimiento" >fecha de nacimiento</h3>
+                    <h3 id="tipo_documento" style="padding-top: 3%;">documento</h3>
+                    <h3 id="telefono" style="padding-top: 3%;">num tel</h3>
+                    <h3 id="direccion" style="padding-top: 3%;">direccion</h3>
+                    <br>
+                    <div class="btnContra">
+                        <button type="button" class="btnCamilo" id="editarDatos">Edit Data</button>
+                        <button type="button" class="btnCamilo2" id="cambiarContra">Change Password</button>
+                    </div>
+                  </div>
+       
+                </div>
+              </div>
+              <br>
 
-            </div>
-
-            <div id="cuenta">
-                <div class="card"
-                    style="background:url(./assets/images/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
-                    <!-- <img class="imgCard" src="assets/images/card chip.png" alt="Avatar" style="width:20%"> -->
-                    <div class="containerCard camiloOcultar" id="containerCardTron">
-                        <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
-                        <button type="button" class="btnCamilo correrBtn" id="copiarDireccion">Copiar Direccion</button>
-                        <br>
-                        <h3 class="usdt">USDT</h3>
-                        <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
-                        <h3 class="trx">TRX</h3>
-                        <h3 id="respuestaSaldoTRX" class="moversaldos">referencia</h3>
-                        <h3 class="moversaldos">Creada</h3>
-                        <h3 id="respuestaCreada" class="moverfechas">referencia</h3>
-                        <h3 class="moversaldos">Actualizada</h3>
-                        <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
+              <!-- Pop Pap -->
+      
+              <div class="modal-containerPerfil">
+                <div class="modalPerfil modal-closePerfil">
+                    <h1>Change Password</h1>
+                    <div style="padding: 10px;">
+                      <p>
+                        Welcome, you are trying to change your password, remember that if you do, your previous password will no longer work.</p>
+                      <br>
+                      <h4>Enter Your New Password</h4>
+                      <input type="text" id="inputContraNueva" placeholder="Digite Su Nueva Contraseña" style="text-align: center; border-radius: 20px; height: 30px; color: rgb(250, 249, 249); background: rgb(87, 86, 86); font-size: 20px;">
+                      <br>
+                      <br>
+                      <br>
+                      <div class="btnContra">
+                          <button type="button" class="btnCamiloCambiar2" id="contraNueva">Change Password</button>
+                      </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="right">
+              </div>
+      
+              <!-- Menu dash -->
+      
+              <div class="right">
                 <div class="top">
-                    <button id="menu-btn">
-                        <span class="material-icons-sharp">menu</span>
-                    </button>
-               </div>
+                  <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                  </button>
+                </div>
+              </div>
+      
             </div>
+      
+      
+      
+      
+          </div>
 
 
-
-        </div>
-
-
-        </div>
 
 
 
         <script src="./assets/js/index.js"></script>
         <script src="./assets/js/orders.js"></script>
-        <!-- <script src="./assets/js/app.js"></script> -->
 
-        <!-- <script src="creartron.js"></script> -->
-
-        <!-- <script src="./assets/js/logica/routes/routes.js"></script>-->
-
- <script src="./assets/js/logica/datos/cuentaTronDto.js"></script>
-<script src="./assets/js/logica/utils/HttpsClientCuentaTron.js"></script>
-<script src="./assets/js/logica/business/crearCuentaBussiness.js"></script>
-<script src="./assets/js/logica/controller/cuentaTronController.js"></script>
-<script src="./assets/js/logica/event/crearCuentaEvents.js"></script> 
-
-
-        <!-- <script src="listartron.js"></script> -->
-
-        <!-- <script src="./assets/js/logica/datos/listarTronDto.js"></script> -->
-
-
-        <!-- <script src="./assets/js/logica/holaputo.js"></script> -->
+        <script src="./verPerfilEvents.js"></script>
+        <script src="./assets/js/logica/utils/HttpsClientDatosPerfil.js"></script>
 
         <script src="./assets/js/logica/routes/routes.js"></script>
-        <script src="./assets/js/logica/event/listarCuentaEvents.js"></script>
-        <script src="./assets/js/logica/controller/listarTronController.js"></script>
-        <script src="./assets/js/logica/business/listarCuentasBussiness.js"></script>
-        <script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script>
 
+        <script src="./assets/js/logica/datos/cambiarContraDto.js"></script>
+        <script src="./assets/js/logica/utils/HttpsClientCambiarContra.js"></script>
+        <script src="./assets/js/logica/business/cambiarContraBussiness.js"></script>
+        <script src="./assets/js/logica/controller/cambiarContraController.js"></script>
+        <script src="./assets/js/logica/event/cambiarContraEvents.js"></script>
 
 </body>
 

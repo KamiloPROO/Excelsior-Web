@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,35 @@
     <title>Excelsior</title>
 
     <link rel="icon" href="./assets/images/logo rosa for all.png">
-<!--Material Icon-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-<!--STYLESHEET-->
-<link rel="stylesheet" href="./assets/css/style.css" >
-<link rel="stylesheet" href="./assets/css/estilos.css" >
-<link rel="stylesheet" href="./assets/css/person.css">
-<link rel="stylesheet" href="./assets/css/progress.css">
-<!-- BOOTSTRAP -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/person.css">
+    <link rel="stylesheet" href="./assets/css/progress.css">
+    <link rel="stylesheet" href="./assets/css/perfil.css">
+    <!-- BOOTSTRAP -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"
+        integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
 
 </head>
+
 <body>
 
     <div id="particles-js"></div>
@@ -38,140 +45,140 @@
             <div class="top">
                 <div class="logo">
                     <img src="./assets/images/white-logo.svg">
-                   
+
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">
                         close </span>
                 </div>
             </div>
-            
+
             <div class="sidebar">
                 <a href="Dash.html" class="active"><span class="material-icons-sharp">
-                    grid_view</span>
+                        grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
 
                 <a href="finances.html"><span class="material-icons-sharp">
-                    account_balance</span>
+                        account_balance</span>
                     <h3>Finances</h3>
                 </a>
 
                 <a href="team.html"><span class="material-icons-sharp">
-                    diversity_3</span>
+                        diversity_3</span>
                     <h3>Team</h3>
                 </a>
                 <a href="wallet.html"><span class="material-icons-sharp">
-                    account_balance_wallet</span>
+                        account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
                 <a href="planes.html" id="listarPlanes2"><span class="material-icons-sharp">
-                    local_mall</span>
+                        local_mall</span>
                     <h3>Planes</h3>
                 </a>
                 <a href="education.html"><span class="material-icons-sharp">
-                    school</span>
+                        school</span>
                     <h3>Education</h3>
                 </a>
                 <a href="resources.html"><span class="material-icons-sharp">
-                    description</span>
+                        description</span>
                     <h3>Resources</h3>
                 </a>
                 <a href="support.html"><span class="material-icons-sharp">
-                    support_agent</span>
+                        support_agent</span>
                     <h3>Support</h3>
                 </a>
-                
+
                 <a href="index.html" style="width: 10%"><span class="material-icons-sharp">
-                    logout</span>
+                        logout</span>
                     <h3>Logout</h3>
                 </a>
 
             </div>
 
- 
+
         </aside>
 
         <!-----------End of Aside------------>
 
         <main>
             <h1>Dashboard</h1>
-           <div class="vid">
-            <div class="video2">
-                <video height="800px" width="760px" loop autoplay muted>
-                    <source src="BUCLEPARADASHBOARD.mp4" type="video/mp4" >
-                   </video>
+            <div class="vid">
+                <div class="video2">
+                    <video height="800px" width="760px" loop autoplay muted>
+                        <source src="BUCLEPARADASHBOARD.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-           </div>
 
             <div class="insights">
                 <div class="sales">
                     <span class="material-icons-sharp">analytics</span>
                     <div class="middle">
-                       <div class="left">
-                          <h3>Total Sales</h3>
-                          <h1>$21,500</h1>
-                       </div>
-                       <div class="progress">
-                        <svg>
-                            <circle cx="38" cy="38" r="36"></circle>
-                        </svg>
-                        <div class="number">
-                            <p>81%</p>
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$21,500</h1>
                         </div>
-                
-                       </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+
+                        </div>
                     </div>
 
                     <small class="text-muted"> Last 24 hours</small>
                 </div>
 
-             <!-----------End of Sales------------>
-             <div class="income">
+                <!-----------End of Sales------------>
+                <div class="income">
                     <span class="material-icons-sharp">bar_chart</span>
                     <div class="middle">
-                       <div class="left">
-                          <h3>Total Income</h3>
-                          <h1>$15,200</h1>
-                       </div>
-                       <div class="progress">
-                        <svg>
-                            <circle cx="38" cy="38" r="36"></circle>
-                        </svg>
-                        <div class="number">
-                            <p>62%</p>
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$15,200</h1>
                         </div>
-                
-                       </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+
+                        </div>
                     </div>
 
                     <small class="text-muted"> Last 24 hours</small>
                 </div>
 
-             <!-----------End of Expenses------------>
+                <!-----------End of Expenses------------>
 
-             <div class="expenses">
-                <span class="material-icons-sharp">stacked_line_chart</span>
-                <div class="middle">
-                   <div class="left">
-                      <h3>Total Expenses</h3>
-                      <h1>$26,200</h1>
-                   </div>
-                   <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>44%</p>
+                <div class="expenses">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$26,200</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+
+                        </div>
                     </div>
-            
-                   </div>
+
+                    <small class="text-muted"> Last 24 hours</small>
                 </div>
 
-                <small class="text-muted"> Last 24 hours</small>
-              </div>
-
-              <!-----------End of income------------>
+                <!-----------End of income------------>
             </div>
 
             <!-- End of Insights-->
@@ -179,13 +186,22 @@
             <button type="button" class="btn camilo" id="listarInversiones">Ver mis Planes</button>
             <br> -->
             <div class="cardsInversion" id="product-list">
-               
+
             </div>
         </main>
 
-         <!-- End of Main-->
+        <!-- <div class="dropdown">
+            <button>HubSpot Resources</button>
+            <div class="dropdown-content">
+            <a href="https://blog.hubspot.com/">Blog</a>
+            <a href="https://academy.hubspot.com/">Academy</a>
+            <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+            </div>
+        </div> -->
 
-         <div class="right">
+        <!-- End of Main-->
+
+        <div class="right">
             <div class="top">
                 <button id="menu-btn">
                     <span class="material-icons-sharp">menu</span>
@@ -194,35 +210,42 @@
                     <span class="material-icons-sharp active">light_mode</span>
                     <span class="material-icons-sharp">dark_mode</span>
                 </div>
-                <div class="profile">
+                <div class="profile dropdown">
                     <div class="info">
                         <p>Hey, <b id="name">Pedro</b></p>
                     </div>
                     <div class="profile-photo">
-                        <img src="./assets/images/profile-1.jpg">
+                        <img id="perfil" src="./assets/images/profile-1.jpg">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="perfil.html">Perfil</a>
+ 
                     </div>
                 </div>
-           </div>
+                <!-- menu -->
 
-             <!-- End Of Top-->
+
+            </div>
+
+            <!-- End Of Top-->
             <div class="recent-updates">
                 <h2>Recent Updates</h2>
-                   <div class="updates">
+                <div class="updates">
                     <div class="update">
                         <div class="profile-photo">
                             <img src="./assets/images/profile-2.jpg">
                         </div>
                         <div class="message">
-                            <p><b>Jhon Lenon</b> received  his order of Night lion tech GPS drone</p>
+                            <p><b>Jhon Lenon</b> received his order of Night lion tech GPS drone</p>
                             <small class="text-muted">2 minutes ago</small>
                         </div>
-                      </div>
-                      <div class="update">
+                    </div>
+                    <div class="update">
                         <div class="profile-photo">
                             <img src="./assets/images/profile-3.jpg">
                         </div>
                         <div class="message">
-                            <p><b>Jhon Lenon</b> received  his order of Night lion tech GPS drone</p>
+                            <p><b>Jhon Lenon</b> received his order of Night lion tech GPS drone</p>
                             <small class="text-muted">2 minutes ago</small>
                         </div>
                     </div>
@@ -231,70 +254,70 @@
                             <img src="./assets/images/profile-4.jpg">
                         </div>
                         <div class="message">
-                            <p><b>Jhon Lenon</b> received  his order of Night lion tech GPS drone</p>
+                            <p><b>Jhon Lenon</b> received his order of Night lion tech GPS drone</p>
                             <small class="text-muted">2 minutes ago</small>
                         </div>
                     </div>
-                   </div>
-            </div>
-        
-                     <!-- End of Updates-->
-                     <div class="sales-analytics">
-                        <h2>Sales Analytics</h2>
-                        <div class="item online">
-                            <div class="icon">
-                                <span class="material-icons-sharp">shopping_cart</span>
-                            </div>
-                            <div class="right">
-                                <div class="info">
-                                    <h3>ONLINE ORDERS</h3>
-                                    <small class="text-muted">Last 24 Hours</small>
-                                </div>
-                                <h5 class="success">+39%</h5>
-                                <h3>3849</h3>
-                            </div>
-                        </div>
-                        <div class="item offline">
-                            <div class="icon">
-                                <span class="material-icons-sharp">local_mall</span>
-                            </div>
-                            <div class="right">
-                                <div class="info">
-                                    <h3>OFFLINE ORDERS</h3>
-                                    <small class="text-muted">Last 24 Hours</small>
-                                </div>
-                               <h5 class="danger">-17%</h5>
-                                <h3>1100</h3>
-                            </div>
-                        </div>
-                         <div class="item customers">
-                            <div class="icon">
-                                <span class="material-icons-sharp">person</span>
-                            </div>
-                            <div class="right">
-                                <div class="info">
-                                    <h3>NEW CUSTOMERS</h3>
-                                    <small class="text-muted">Last 24 Hours</small>
-                                </div>
-                                <h5 class="success">+25%</h5>
-                                <h3>849</h3>
-                            </div>
-                        </div>
-                     </div>
                 </div>
+            </div>
+
+            <!-- End of Updates-->
+            <div class="sales-analytics">
+                <h2>Sales Analytics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1100</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>NEW CUSTOMERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>849</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
-<!-- Fondo Particles-->
-
-     
+    <!-- Fondo Particles-->
 
 
-<script src="./assets/js/index.js"></script> 
- <script src="./assets/js/orders.js"></script>
 
-<!-- <script>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/orders.js"></script>
+
+    <!-- <script>
 
     const numb = document.querySelector(".numb");
     let counter = 0;
@@ -310,18 +333,20 @@
     </script> -->
 
 
-<script src="listarplanes.js"></script>
-<!-- <script src="listarinversion.js"></script> -->
+    <script src="listarplanes.js"></script>
+    <!-- <script src="listarinversion.js"></script> -->
 
-<!-- <script src="./assets/js/logica/routes/routes.js"></script> -->
+    <!-- <script src="./assets/js/logica/routes/routes.js"></script> -->
 
-<script src="./assets/js/logica/utils/HttpsClientLisInversion.js"></script>
-<script src="./assets/js/logica/business/listarInversionBussiness.js"></script>
-<script src="./assets/js/logica/controller/listarInversionController.js"></script>
-<script src="./assets/js/logica/event/listarInversionEvents.js"></script>
+    <script src="./assets/js/logica/utils/HttpsClientLisInversion.js"></script>
+    <script src="./assets/js/logica/business/listarInversionBussiness.js"></script>
+    <script src="./assets/js/logica/controller/listarInversionController.js"></script>
+    <script src="./assets/js/logica/event/listarInversionEvents.js"></script>
+    
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
 
 
 </body>
+
 </html>

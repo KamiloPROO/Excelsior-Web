@@ -1,0 +1,44 @@
+document.addEventListener('DOMContentLoaded', e => {
+
+ 
+    var idpersona = localStorage.getItem("idPersona");
+
+    $.ajax({
+        type: "POST",
+        url: "http://52.175.225.67:8082/api/Persona/BuscarPersonaPorIdPersona",
+        data: { "IdPersona": idpersona },
+        success: function (data) {
+
+            
+
+                const nom = document.getElementById('nombrePerfil');
+                const apelli = document.getElementById('apellidoPerfil')
+                const naci = document.getElementById('fecha_nacimiento')
+                const docu = document.getElementById('tipo_documento')
+                const tel = document.getElementById('telefono')
+                const dire = document.getElementById("direccion")
+
+
+                nom.textContent = `${data.PRIMER_NOMBRE}`
+                // apelli.textContent = `${data.PRIMER_APELLIDO}`
+                apelli.textContent = "gomez"
+                naci.textContent = `${data.FECHA_NACIMIENTO}`
+                docu.textContent = `${data.DOCUMENTO}`
+                tel.textContent = `${data.TELEFONO}`
+                dire.textContent = `${data.DIRECCION}`
+
+
+        },
+        error: function () {
+            alert("Ha ocurrido un error, por favor vuelva a intentarlo")
+        }
+    });
+
+
+
+
+
+
+
+
+})
