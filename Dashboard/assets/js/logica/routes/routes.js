@@ -1,15 +1,15 @@
 const URL_API_BASE = "http://52.175.225.67:63203";
-const URL_API_BASE_USUARIOS = "https://excelsiortrader.app/api/Persona";
-const URL_API_BASE_REGISTRO = "http://52.175.225.67:8082/api/persona";
-const URL_API_BASE_VERIFICAR = "http://52.175.225.67:8082/api/Persona";
-const URL_API_BASE_CREAR_TRON = "http://52.175.225.67:63203/api/CuentaTron";
-const URL_API_BASE_LISTAR_TRON = "http://52.175.225.67:63203/api/CuentaTron";
-const URL_API_BASE_LISTAR_PLANES = "http://52.175.225.67:63203/api/TiposMembresia";
-const URL_API_BASE_LISTAR_PLAN_ACTIVADO = "http://52.175.225.67:63203/api/Inversiones";
-const URL_API_BASE_GUARDAR_PLAN_ACTIVO = "http://52.175.225.67:63203/api/TiposMembresia";
-const URL_API_BASE_DATOS_PERFIL = "http://52.175.225.67:8082/api/Persona";
-const URL_API_BASE_NUEVA_CONTRASENIA = "https://excelsiortrader.app/api/Usuario/CambiarContraseniaUsuario";
-const URL_API_BASE_RECOVERY_CONTRASENIA = "http://52.175.225.67:8082/api/Usuario";
+const URL_API_BASE_USUARIOS = "https://apiamingenieria.app/api/Persona";
+const URL_API_BASE_REGISTRO = "https://apiamingenieria.app/api/persona";
+const URL_API_BASE_VERIFICAR = "https://apiamingenieria.app/Persona";
+const URL_API_BASE_CREAR_TRON = "https://excelsiortrader.app/api/CuentaTron";
+const URL_API_BASE_LISTAR_TRON = "https://excelsiortrader.app/api/CuentaTron";
+const URL_API_BASE_LISTAR_PLANES = "https://excelsiortrader.app/api/TiposMembresia";
+const URL_API_BASE_LISTAR_PLAN_ACTIVADO = "https://excelsiortrader.app/api/Inversiones";
+const URL_API_BASE_GUARDAR_PLAN_ACTIVO = "https://excelsiortrader.app/api/TiposMembresia";
+const URL_API_BASE_DATOS_PERFIL = "https://apiamingenieria.app/api/Persona";
+const URL_API_BASE_NUEVA_CONTRASENIA = "https://apiamingenieria.app/api/Usuario/CambiarContraseniaUsuario";
+const URL_API_BASE_RECOVERY_CONTRASENIA = "https://apiamingenieria.app/api/Usuario";
 
 const URL_API_LOGIN_USUARIOS = URL_API_BASE_USUARIOS + "/IniciarSesion";
 const URL_API_REGIS_USUARIOS = URL_API_BASE_REGISTRO + "/CrearPersona";

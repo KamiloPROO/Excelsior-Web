@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
   $.ajax({
     type: "POST",
-    url: "http://52.175.225.67:63203/api/Inversiones/ListarMisInversiones",
+    url: "https://excelsiortrader.app/api/Inversiones/ListarMisInversiones",
     data: {"IdPersona":idpersona},
     success: function (data) {
 

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "POST",
-        url: "http://52.175.225.67:8082/api/Persona/BuscarPersonaPorIdPersona",
+        url: "https://apiamingenieria.app/api/Persona/BuscarPersonaPorIdPersona",
         data: { "IdPersona": idpersona },
         success: function (data) {
 
