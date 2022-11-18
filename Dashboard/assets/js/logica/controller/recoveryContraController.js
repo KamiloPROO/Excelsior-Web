@@ -1,8 +1,8 @@
 function RecoveryContraseniaIndex() {
 
     const recoveryContrasenia = {
-        Email: $("#recoveryEmailContra").val(),
-        Login: $("#recoveryUserio").val(),
+        Email: "jcrodriguez1765@misena.edu.co",
+        Login: "3137572888",
     }
 
     recovery(recoveryContrasenia);
