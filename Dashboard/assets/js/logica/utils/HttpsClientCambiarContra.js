@@ -19,8 +19,8 @@ function CallEndPointPostCambiarContra(url, jsonArgs) {
 
                     if(result.isConfirmed){
                         window.location.href = URL_API_BASE;
-                        location.replace("perfil.html");
-                        location.href = "perfil.html";  
+                        location.replace("signIn.html");
+                        location.href = "signIn.html";  
                     }   
                 })
             } else {

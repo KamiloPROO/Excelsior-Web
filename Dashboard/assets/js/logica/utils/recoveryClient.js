@@ -7,26 +7,21 @@ function CallEndPointPost(url, jsonArgs) {
 
             console.log(data);
 
-            // const idper = data.Id;
-            // const name = data.PrimerNombre;
 
-            // console.log(name);
 
-            // if (data.CodigoRespuesta === 200) {
+            if (data.CodigoRespuesta === 200) {
 
-            //     localStorage.setItem("idPersona", idper);
-            //     localStorage.setItem("PrimerNombre", name);
-            //     window.location.href = URL_API_BASE;
-            //     location.replace("Dash.html");
-            //     location.href = "Dash.html";
+                window.location.href = URL_API_BASE;
+                location.replace("signIn.html");
+                location.href = "signIn.html";
 
-            // } else {
-            //     Swal.fire({
-            //         icon: 'error',
-            //         title: 'Oops...',
-            //         text: 'Usuario o Contraseña Incorrecta',
-            //     })
-            // };
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'No pudimos recuperar tu contra',
+                })
+            };
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")
