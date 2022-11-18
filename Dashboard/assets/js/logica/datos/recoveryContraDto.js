@@ -1,6 +1,0 @@
-datos = {
-
-    Email: "",
-    Login: ""
-
-}
