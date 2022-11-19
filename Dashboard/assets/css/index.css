@@ -1,8 +1,51 @@
+
+
 @media (min-width: 991px) {
 
    .lobby{
       display: none;
    }
+ 
+   .video{
+      width: 700px ;
+   }
+
+}
 
 
+@media (max-width: 401px) {
+ 
+   .insights{
+      width: 50%;
+   }
+
+   .vid{
+      width: 50%;
+   }
+
+   .video2{
+     width: 50% !important;   
+   }
+   
+   .video{
+      width: 200% ;
+   }
+
+   /* .cardsInversion{
+      width: 350px;
+   } */
+
+   .recent-updates{
+      width: 50%;
+   }
+
+   .sales-analytics{
+      width: 50%;
+   }
+
+   .correrTop{
+      width: 10px;
+   }
+
+   
 }
