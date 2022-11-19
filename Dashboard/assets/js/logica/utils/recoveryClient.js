@@ -9,7 +9,7 @@ function CallEndPointPost(url, jsonArgs) {
 
 
 
-            if (data.CodigoRespuesta === 200) {
+            if (data.Codigo === 200) {
 
                 window.location.href = URL_API_BASE;
                 location.replace("signIn.html");

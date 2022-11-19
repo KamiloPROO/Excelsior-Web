@@ -28,7 +28,4 @@ recovey.addEventListener("click", function(e){
         passRecovery(); 
 
       }
-
-    
-
 })
