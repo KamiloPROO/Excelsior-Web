@@ -5,6 +5,7 @@ function passRecovery() {
 
         Email: $("#recoveryEmailContra").val(),
         Login: $("#recoveryUserio").val(),
+        IdProyecto: 4
 
     }
     
