@@ -217,7 +217,8 @@
   .right2 .top .theme-toggler {
       width: 4.4rem;
       position: absolute;
-      left: 26%;
+      left: 66%;
+      display: none;
       
   }
 
