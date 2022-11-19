@@ -176,18 +176,22 @@
    /* .container{
       width: 50%;
       margin-left: 1px;
+   }*/
+
+   .cuerpo{
+      width: 100%;
    }
-  */
    .video{
-      width: 350px ;
+      width: 270px ;
+      margin-left: -10px;
    }
 
    .todo1{
-      width: 50%;
+      width: 100%;
    }
 
    .right2{
-      width: 50%;
+      width: 98%;
       margin-left: 4px;
    }
 
@@ -195,9 +199,9 @@
       width: 50%;
    }*/
 
-   /* .todo1 .cardsInversion{
-      width: 20%;
-   }  */
+   .todo1 .cardsInversion{
+      width: 370px;
+   } 
 
   .right2 .top{
       position: fixed;
@@ -207,7 +211,7 @@
       padding: 0 0.8rem;
       height: 4.6rem;
       background: var(--color-white);
-      width: 52%;
+      width: 100%;
       margin: 0;
       z-index: 2;
       box-shadow: 0 1rem 1rem var(--color-light);
