@@ -141,3 +141,43 @@
         width: 90%;
     }
 }
+
+@media (min-width: 1024px) {
+   
+    .modal{
+        width: 40%;
+        height: 60%;
+    }
+
+    .modal-plan1{
+        width: 40%;
+        height: 60%;
+        
+    }
+
+    .modal-plan2{
+        width: 40%;
+        height: 60%;
+        
+    }
+
+    .modal-plan3{
+        width: 40%;
+        height: 60%;
+    }
+
+    .modal-plan4{
+        width: 40%;
+        height: 60%;
+        
+    }
+
+    .modal-plan5{
+        width: 40%;
+        height: 60%;
+        
+    }
+    .montoOperar {
+        width: 90%;
+    }
+ }
