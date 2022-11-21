@@ -81,37 +81,44 @@
     .card2 {
         width: 100%;
         margin-left: 10%;
+        padding: 1%;
     }
 
     .card3 {
         width: 100%;
         margin-left: 10%;
+        padding: 1%;
     }
 
     .card4 {
         width: 100%;
         margin-left: 10%;
+        padding: 1%;
     }
 
     .card5 {
         width: 100%;
         margin-left: 10%;
+        padding: 1%;
     }
 
     .card6 {
         width: 100%;
         margin-left: 10%;
+        padding: 1%;
     }
 
     .card7 {
         width: 100%;
         margin-left: 10%;
+        padding: 1%;
     }
 
     .modal{
         display: block;
         width: 80%;
         height: auto;
+        padding: 1%;
     }
 
     .imgModal1{
@@ -128,30 +135,31 @@
 
     .modal-plan1{
         width: 80%;
-        
+        padding: 1%;
     }
 
     .modal-plan2{
         width: 80%;
-        
+        padding: 1%;
     }
 
     .modal-plan3{
         width: 80%;
-        
+        padding: 1%;
     }
 
     .modal-plan4{
         width: 80%;
-        
+        padding: 1%;
     }
 
     .modal-plan5{
         width: 80%;
-        
+        padding: 1%;
     }
     .montoOperar {
         width: 90%;
+        padding: 1%;
     }
 }
 
