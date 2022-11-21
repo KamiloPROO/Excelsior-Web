@@ -1,3 +1,16 @@
+/* .card {
+    box-shadow: 0 6px 10px 0 rgb(117, 117, 117);
+    transition: 0.3s;
+    display: flex;
+    margin-left: 25%;
+    width: 46%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+ */
+
+
 /* ============Rigth============ */
 
 .right2 {
@@ -172,7 +185,7 @@
 
 /* dashboard */
 
-@media (max-width: 401px) {
+@media (max-width: 425px) {
 
    /* .container{
       width: 50%;
@@ -779,3 +792,160 @@
 
 /* wallet */
 
+ @media (max-width: 500px) {
+
+.form-content{
+   width: 110%;
+}
+
+.card{
+   width: 105%;
+   margin-left: 20px;
+}
+
+.correrBtn{
+   margin-left: -40px;
+   width: 50%;
+}
+
+.usdt{
+   margin-left: 70%;
+   width: 20%;
+}
+
+.trx{
+   margin-left: 70%;
+   width: 17%;
+}
+
+.moversaldos{
+   margin-left: 43%;
+}
+
+.creado{
+   margin-left: 50%;
+}
+
+.moverfechas{
+   width: 100%;
+   margin-left: 50px;
+   font-size: 15px !important;
+}
+
+.moverRefe{
+
+font-size: 14px !important;
+
+}
+
+.right2 .top{
+   position: fixed;
+   top: 0;
+   left: 0;
+   align-items: center;
+   padding: 0 0.8rem;
+   height: 4.6rem;
+   background: var(--color-white);
+   width: 100%;
+   margin: 0;
+   z-index: 2;
+   box-shadow: 0 1rem 1rem var(--color-light);
+
+}
+
+}
+
+@media (min-width: 768px) {
+   .card{
+      width: 80%;
+   }
+}
+
+
+@media (min-width: 1024px) {
+   .card{
+      width: 50%;
+   }
+}
+
+ /* @media (max-width: 450px) {
+   .card{
+      width: 111%;
+      margin-left: 20px;
+   }
+   
+   .correrBtn{
+      margin-left: -70px;
+   }
+   
+   .usdt{
+      margin-left: 80%;
+      width: 17%;
+   }
+   
+   .trx{
+      margin-left: 80%;
+      width: 17%;
+   }
+   
+   .moversaldos{
+      margin-left: 63%;
+   }
+   
+   .creado{
+      margin-left: 60%;
+   }
+   
+   .moverfechas{
+      width: 100%;
+      margin-left: 50px;
+      font-size: 15px !important;
+   }
+   
+   .moverRefe{
+   
+   font-size: 18px !important;
+   
+   }
+}
+
+ @media (max-width: 770px) {
+   .card{
+      width: 111%;
+      margin-left: 20px;
+   }
+   
+   .correrBtn{
+      margin-left: 0px;
+   }
+   
+   .usdt{
+      margin-left: 80%;
+      width: 17%;
+   }
+   
+   .trx{
+      margin-left: 80%;
+      width: 17%;
+   }
+   
+   .moversaldos{
+      margin-left: 63%;
+   }
+   
+   .creado{
+      margin-left: 60%;
+   }
+   
+   .moverfechas{
+      width: 100%;
+      margin-left: 50px;
+      font-size: 15px !important;
+   }
+   
+   .moverRefe{
+   
+   font-size: 19px !important;
+   
+   }
+}  */

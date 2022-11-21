@@ -936,16 +936,139 @@ STYLE OF PLANS VIEW
     padding: 1%;
 }
 
-/* .carrrr1{
-    background-color: red;
-    width: 50% !important;
-}
-.carrrr2{
-    background-color: blue;
-    width: 50% !important;
-} */
+/* wallet */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 401px) {
+
+    .form-content{
+       width: 110%;
+    }
+    
+    .card{
+       width: 105%;
+       margin-left: 20px;
+    }
+    
+    .correrBtn{
+       margin-left: -40px;
+       width: 50%;
+    }
+    
+    .usdt{
+       margin-left: 70%;
+       width: 20%;
+    }
+    
+    .trx{
+       margin-left: 70%;
+       width: 17%;
+    }
+    
+    .moversaldos{
+       margin-left: 43%;
+    }
+    
+    .creado{
+       margin-left: 50%;
+    }
+    
+    .moverfechas{
+       width: 100%;
+       margin-left: 50px;
+       font-size: 15px !important;
+    }
+    
+    .moverRefe{
+    
+    font-size: 14px !important;
+    
+    }
+    
+    }
+     */
+     /* @media (max-width: 450px) {
+       .card{
+          width: 111%;
+          margin-left: 20px;
+       }
+       
+       .correrBtn{
+          margin-left: -70px;
+       }
+       
+       .usdt{
+          margin-left: 80%;
+          width: 17%;
+       }
+       
+       .trx{
+          margin-left: 80%;
+          width: 17%;
+       }
+       
+       .moversaldos{
+          margin-left: 63%;
+       }
+       
+       .creado{
+          margin-left: 60%;
+       }
+       
+       .moverfechas{
+          width: 100%;
+          margin-left: 50px;
+          font-size: 15px !important;
+       }
+       
+       .moverRefe{
+       
+       font-size: 18px !important;
+       
+       }
+    }
+    
+     @media (max-width: 770px) {
+       .card{
+          width: 111%;
+          margin-left: 20px;
+       }
+       
+       .correrBtn{
+          margin-left: 0px;
+       }
+       
+       .usdt{
+          margin-left: 80%;
+          width: 17%;
+       }
+       
+       .trx{
+          margin-left: 80%;
+          width: 17%;
+       }
+       
+       .moversaldos{
+          margin-left: 63%;
+       }
+       
+       .creado{
+          margin-left: 60%;
+       }
+       
+       .moverfechas{
+          width: 100%;
+          margin-left: 50px;
+          font-size: 15px !important;
+       }
+       
+       .moverRefe{
+       
+       font-size: 19px !important;
+       
+       }
+    } */
+
+/* @media (max-width: 1024px) {
     .planesss {
         width: 80%;
         margin-left: 10%;
@@ -984,16 +1107,14 @@ STYLE OF PLANS VIEW
     }
 
 
-    /* card wallet */
-
     .card {
         width: 63%;
         margin-left: 12%;
     }
 
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .planesss {
         width: 110%;
         margin-left: 10%;
@@ -1006,9 +1127,9 @@ STYLE OF PLANS VIEW
         margin-left: 20%;
     }
 
-}
+} */
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     .planesss {
         width: 300%;
         margin-left: 20%;
@@ -1071,4 +1192,4 @@ STYLE OF PLANS VIEW
         margin-left: 35%;
         width: 70%;
     }
-}
+} */
