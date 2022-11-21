@@ -189,8 +189,6 @@
 
 @media (max-width: 450px) {
 
-
-
    .cuerpo{
       width: 100%;
    }
@@ -200,7 +198,7 @@
    }
 
    .todo1{
-      width: 100%;
+      width: 99%;
    }
 
    .right2{
@@ -213,7 +211,7 @@
    }*/
 
    .todo1 .cardsInversion{
-      width: 420px;
+      width: 400px;
    } 
 
   .right2 .top{

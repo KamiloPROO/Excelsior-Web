@@ -1,0 +1,16 @@
+@media (max-width: 450px){
+    .cardPerfil{
+        width: 113%;
+        margin-left: 20px;
+    }
+
+    .modalPerfil{
+        width: 80%;
+    }
+
+    .right .profile .info {
+        display: block;
+        margin-left: -100px;
+    }
+
+}

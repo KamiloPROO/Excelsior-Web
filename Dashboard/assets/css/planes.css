@@ -67,6 +67,11 @@
 
     }
 
+    .right .profile .info {
+        display: block;
+        margin-left: -80%;
+    }
+
     .card {
         width: 100%;
         display: block;
