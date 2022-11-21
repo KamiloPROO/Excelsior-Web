@@ -170,6 +170,10 @@
         height: auto;
     }
 
+    .info{
+        display: none;
+    }
+
     .modal-plan1{
         width: 40%;
         height: auto;
