@@ -173,6 +173,10 @@
 
 @media (min-width: 991px) {
 
+   .right2 .profile .infoR {
+      display: none;
+   }
+   
    .lobby{
       display: none;
    }
@@ -265,6 +269,7 @@
   .right2 .profile .info {
       display: none;
   }
+
 
   .quitarDash{
    display: none;
