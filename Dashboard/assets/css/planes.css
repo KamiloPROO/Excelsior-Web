@@ -109,8 +109,21 @@
     }
 
     .modal{
+        display: block;
         width: 80%;
-        
+        height: auto;
+    }
+
+    .imgModal1{
+        display: none;
+    }
+
+    .montoOperar{
+        text-align: center; 
+        border-radius: 20px; height: 30px; 
+        color: rgb(250, 249, 249); 
+        background: rgb(87, 86, 86); 
+        font-size: 20px;
     }
 
     .modal-plan1{
