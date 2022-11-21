@@ -1,0 +1,138 @@
+ @media (max-width: 1024px) {
+    .planesss {
+        width: 80%;
+        margin-left: 10%;
+        display: inline-flex;
+
+    }
+
+    .modal {
+        width: 60%;
+        height: auto;
+    }
+
+    .modal-plan1 {
+        width: 60%;
+        height: auto;
+    }
+
+    .modal-plan2 {
+        width: 60%;
+        height: auto;
+    }
+
+    .modal-plan3 {
+        width: 60%;
+        height: auto;
+    }
+
+    .modal-plan4 {
+        width: 60%;
+        height: auto;
+    }
+
+    .modal-plan5 {
+        width: 60%;
+        height: auto;
+    }
+
+
+    .card {
+        width: 63%;
+        margin-left: 12%;
+    }
+
+} 
+
+ @media (max-width: 768px) {
+    .planesss {
+        width: 110%;
+        margin-left: 10%;
+        display: inline-flex;
+
+    }
+
+    .card {
+        width: 75%;
+        margin-left: 20%;
+    }
+
+} 
+
+    @media (max-width: 450px) {
+    .planesss {
+        width: 100%;
+        margin-left: 10px;
+        display: inline-block;
+
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+        margin-left: 10%;
+    }
+
+    .card2 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .card3 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .card4 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .card5 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .card6 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .card7 {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .modal{
+        width: 80%;
+        
+    }
+
+    .modal-plan1{
+        width: 80%;
+        
+    }
+
+    .modal-plan2{
+        width: 80%;
+        
+    }
+
+    .modal-plan3{
+        width: 80%;
+        
+    }
+
+    .modal-plan4{
+        width: 80%;
+        
+    }
+
+    .modal-plan5{
+        width: 80%;
+        
+    }
+    .montoOperar {
+        width: 90%;
+    }
+}
