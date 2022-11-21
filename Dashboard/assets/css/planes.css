@@ -126,6 +126,11 @@
         padding: 1%;
     }
 
+  .comprarPlan{
+    width: 70% !important;
+    margin-left: 25px !important;
+  }
+
     .imgModal1{
         display: none;
     }

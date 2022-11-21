@@ -193,13 +193,37 @@
       width: 100%;
    }
    .video{
-      width: 380px ;
-      margin-left: 0px;
+      width: 400px ;
+      margin-top: -150px;
    }
 
    .todo1{
       width: 98%;
    }
+
+    .insights{
+      margin-top: -120px;
+   }
+ /*
+   .todo1 .insights{
+      display: block;
+      padding: 0px;
+   }
+
+   .middle{
+     height: 47%;
+   }
+
+   .sales{
+      height: 57%;
+   }
+   .income{
+      height: 57%;
+   }
+
+   .expenses{
+      height: 57%;
+   } */
 
    .right2{
       width: 96%;
@@ -212,6 +236,7 @@
 
    .todo1 .cardsInversion{
       width: 390px;
+      height: auto;
    } 
 
   .right2 .top{
@@ -239,6 +264,10 @@
 
   .right2 .profile .info {
       display: none;
+  }
+
+  .quitarDash{
+   display: none;
   }
 
   .right2 .top button {
