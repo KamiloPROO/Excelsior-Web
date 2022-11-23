@@ -1,13 +1,13 @@
-function ListarCuentasTron() {
+// function ListarCuentasTron() {
 
-    var idpersona = localStorage.getItem("idPersona");
+//     var idpersona = localStorage.getItem("idPersona");
 
-    const CuentaTron = {
+//     const CuentaTron = {
         
-        IdPersona: idpersona,
+//         IdPersona: idpersona,
         
-    }
+//     }
     
-    listar(CuentaTron);
+//     listar(CuentaTron);
    
-}
+// }

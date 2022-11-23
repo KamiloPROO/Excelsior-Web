@@ -1,7 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', e => {
-    // alert("hoghohoh")
-    // function CallEndPointPost(url, jsonArgs) {
+
     var idpersona = localStorage.getItem("idPersona");
 
     $.ajax({
@@ -36,25 +35,11 @@ document.addEventListener('DOMContentLoaded', e => {
                 document.getElementById('crearCuentaTron2').classList.toggle("camilo")
 
             }
-
-            // if (data.IsActivo === true){
-
-            //     window.location.href = URL_API_BASE;
-            //     location.replace("Wallet.html");
-            //     location.href ="Wallet.html";
-
-            //   }else{
-            //     Swal.fire({
-            //       icon: 'error',
-            //       title: 'Oops...',
-            //       text: 'No tienes una cuenta Activa',
-            //     })
-            //   };
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")
         }
     });
-    // }
+
 })
 
