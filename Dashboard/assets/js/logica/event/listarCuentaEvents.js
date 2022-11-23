@@ -1,9 +1,9 @@
-const button = document.getElementById("crearCuentaTron")
+// const button = document.getElementById("crearCuentaTron")
 
-button.addEventListener("click", function(e){
+// button.addEventListener("click", function(e){
    
-    document.getElementById('cuentaM').style.display = 'block'
-    document.getElementById('cuenta').style.display = 'block'
+//     document.getElementById('cuentaM').style.display = 'block'
+//     document.getElementById('cuenta').style.display = 'block'
 
-    ListarCuentasTron();
-})
+//     ListarCuentasTron();
+// })
