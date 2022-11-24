@@ -23,3 +23,19 @@
     width: 450px;
     
 }
+
+.cardsInversion::-webkit-scrollbar {
+  width: 12px;
+                /* width of the entire scrollbar */
+}
+
+.cardsInversion::-webkit-scrollbar-track {
+  background: rgba(163, 162, 159, 0.13);
+  border-radius: 10px;         /* color of the tracking area */
+}
+
+.cardsInversion::-webkit-scrollbar-thumb {
+  background-color: rgb(7, 167, 34);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(7, 167, 34);  /* creates padding around scroll thumb */
+}
