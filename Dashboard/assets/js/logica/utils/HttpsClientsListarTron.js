@@ -2,32 +2,32 @@
 document.addEventListener('DOMContentLoaded', e => {
 
     var idpersona = localStorage.getItem("idPersona");
+    var nomWallet = localStorage.getItem("PrimerNombre");
 
     $.ajax({
         type: "POST",
-        url: "https://excelsiortrader.app/api/CuentaTron/ListarCuentasTron",
+        url: "https://excelsiortrader.app/api/Cuenta/GetAccountUser",
         data: { "IdPersona": idpersona },
         success: function (data) {
 
-            console.log(data.Id);
+            console.log(data);
 
-            if (data.Id != 0.0) {
+            if (data != null) {
 
-                const respu = document.getElementById('respuestaReferencia');
-                const respu2 = document.getElementById('respuestaSaldoUSDT')
-                const respu3 = document.getElementById('respuestaSaldoTRX')
-                const respu4 = document.getElementById('respuestaCreada')
-                const respu5 = document.getElementById('respuestaActualizada')
+                const respu = document.getElementById('nombreUser');
+                const respu2 = document.getElementById('saldoUsdtWallet')
+                const respu4 = document.getElementById('fechaCreada')
+                const respu5 = document.getElementById('fechaActua')
 
 
-                respu.textContent = `${data.Referencia}`
-                respu2.textContent = `${data.SaldoUSDT}`
-                respu3.textContent = `${data.SaldoTRX}`
+                respu.textContent = nomWallet
+                respu2.textContent = `${data.SaldoVirtual}`
                 respu4.textContent = `${data.FechaCreacion}`
-                respu5.textContent = `${data.FechaActulizacion}`
+                respu5.textContent = `${data.FechaActualizacion}`
 
                 // const btn = document.getElementById("crearCuentaTron")
-                document.getElementById('containerCardTron').classList.toggle("camiloOcultar")
+                // document.getElementById('containerCardTron').classList.toggle("camiloOcultar")
+                document.getElementById('containerCardTron').style.display = 'block'
 
 
             } else {

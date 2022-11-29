@@ -343,24 +343,26 @@
    width: 110%;
 }
 
-.card{
-   width: 105%;
+.cardWallet{
+   width: 115%;
+   height: auto;
    margin-left: 20px;
 }
 
-.correrBtn{
-   margin-left: -40px;
-   width: 50%;
+.fechaCreada{
+    font-weight: bolder; 
+    width: 80%;
 }
 
-.usdt{
-   margin-left: 70%;
-   width: 20%;
+.containerFechaActu{
+   display: flex; margin-left: 38%; 
+   margin-top: 1%; padding: 1%;
 }
 
-.trx{
-   margin-left: 70%;
-   width: 17%;
+.containerFechaCreada {
+   display: flex;
+   margin-left: 40%;
+   margin-top: 10%;
 }
 
 .moversaldos{
@@ -379,7 +381,7 @@
 
 .moverRefe{
 
-font-size: 14px !important;
+font-size: 20px !important;
 
 }
 

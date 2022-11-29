@@ -6,10 +6,12 @@ function CallEndPointPost(url, jsonArgs) {
         success: function (data) {
 
                 console.log(data.Id);
+                console.log(data.Celular);
                 console.log(data);
 
                 const idper = data.Id;
                 const name = data.PrimerNombre;
+                const celUser = data.Celular;
 
                 console.log(name);
                 
@@ -17,6 +19,7 @@ function CallEndPointPost(url, jsonArgs) {
 
                 localStorage.setItem("idPersona",idper);
                 localStorage.setItem("PrimerNombre",name);
+                localStorage.setItem("celularUser", celUser)
                 window.location.href = URL_API_BASE;
                 location.replace("Dash.html");
                 location.href ="Dash.html";

@@ -390,9 +390,22 @@ a {
 .card {
     box-shadow: 0 6px 10px 0 rgb(117, 117, 117);
     transition: 0.3s;
-    display: flex;
+    display: block;
     margin-left: 25%;
     width: 46%;
+    height: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.cardWallet {
+    box-shadow: 0 6px 10px 0 rgb(117, 117, 117);
+    transition: 0.3s;
+    display: none;
+    margin-left: 25%;
+    width: 46%;
+    height: 40%;
     border-radius: 10px;
     overflow: hidden;
 
@@ -513,7 +526,7 @@ a {
     /* width: 100%; */
     position: relative;
     padding: 2px 16px;
-    margin-right: 100px;
+    margin-right: 100px; 
 }
 
 
@@ -551,6 +564,41 @@ a {
     background-color: red;
     width: 25%;
     margin-left: 80%;
+}
+
+.moverRefe{
+
+    margin-top: 20px;
+    /* margin-left: 35%; */
+    text-align: center;
+    
+
+}
+
+.fechaCreada{
+    font-weight: bolder; 
+    width: 80%;
+    margin-left: -30px;
+    
+}
+
+.containerFechaActu{
+    display: flex; margin-left: 45%; 
+    margin-top: 1%; padding: 1%;
+}
+
+.containerFechaCreada {
+    display: flex;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+.contaSaldo{
+    width: 30%;
+    height: 30%;
+    background: black;
+    margin-left: 34%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .moversaldos {
