@@ -214,20 +214,6 @@ comprarPlan1.addEventListener("click", function(){
 
         GuardarPlanActivado()
         
-
-        
-        Swal.fire({
-            icon: 'success',
-            title: 'Grandioso',
-            text: 'Has adquirido este plan',
-        }).then((result) => {
-            if(result.isConfirmed){
-                window.location.href = URL_API_BASE;
-                location.replace("planes.html");
-                location.href ="planes.html";   
-            }   
-        })
-        
     }
     
 
@@ -250,18 +236,6 @@ comprarPlan2.addEventListener("click", function(){
     }else{
 
         GuardarPlanActivado1()
-        
-        Swal.fire({
-            icon: 'success',
-            title: 'Grandioso',
-            text: 'Has adquirido este plan',
-        }).then((result) => {
-            if(result.isConfirmed){
-                window.location.href = URL_API_BASE;
-                location.replace("planes.html");
-                location.href ="planes.html";   
-            }   
-        })
     }
 
 })
@@ -285,17 +259,6 @@ comprarPlan3.addEventListener("click", function(){
 
         GuardarPlanActivado2()
 
-        Swal.fire({
-            icon: 'success',
-            title: 'Grandioso',
-            text: 'Has adquirido este plan',
-        }).then((result) => {
-            if(result.isConfirmed){
-                window.location.href = URL_API_BASE;
-                location.replace("planes.html");
-                location.href ="planes.html";   
-            }   
-        })
     }
 
 })
@@ -318,18 +281,7 @@ comprarPlan4.addEventListener("click", function(){
     }else{
 
         GuardarPlanActivado3()
-        
-        Swal.fire({
-            icon: 'success',
-            title: 'Grandioso',
-            text: 'Has adquirido este plan',
-        }).then((result) => {
-            if(result.isConfirmed){
-                window.location.href = URL_API_BASE;
-                location.replace("planes.html");
-                location.href ="planes.html";   
-            }   
-        })
+
     }
 
 })
@@ -352,18 +304,7 @@ comprarPlan5.addEventListener("click", function(){
     }else{
 
         GuardarPlanActivado4()
-        
-        Swal.fire({
-            icon: 'success',
-            title: 'Grandioso',
-            text: 'Has adquirido este plan',
-        }).then((result) => {
-            if(result.isConfirmed){
-                window.location.href = URL_API_BASE;
-                location.replace("planes.html");
-                location.href ="planes.html";   
-            }   
-        })
+
     }
 
 })
@@ -386,18 +327,6 @@ comprarPlan6.addEventListener("click", function(){
     }else{
 
         GuardarPlanActivado5()
-     
-        Swal.fire({
-            icon: 'success',
-            title: 'Grandioso',
-            text: 'Has adquirido este plan',
-        }).then((result) => {
-            if(result.isConfirmed){
-                window.location.href = URL_API_BASE;
-                location.replace("planes.html");
-                location.href ="planes.html";   
-            }   
-        })
     }
 
 

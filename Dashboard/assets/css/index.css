@@ -403,14 +403,14 @@ font-size: 20px !important;
 }
 
 @media (min-width: 768px) {
-   .card{
+   .cardWallet{
       width: 75%;
    }
 }
 
 
 @media (min-width: 1024px) {
-   .card{
+   .cardWallet{
       width: 50%;
    }
 

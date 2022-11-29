@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', e => {
         data: "",
         success: function (data) {
 
+
+            console.log(data);
+
           //plan
             const nomPlan0 = document.getElementById('nomPlan0');
             const saldoIniPlan0 = document.getElementById('saldoIniPlan0');

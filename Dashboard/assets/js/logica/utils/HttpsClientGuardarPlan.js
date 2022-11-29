@@ -7,21 +7,35 @@ function CallEndPointPost1(url, jsonArgs) {
                 
             console.log(data);
 
-                // if (data.status === true ){
+                if (data.Codigo === 500 ){
 
-                //     window.location.href = URL_API_BASE;
-                //     location.replace("Dash.html");
-                //     location.href ="Dash.html";
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'It was not possible to make the investment, insufficient balance',
+                      }).then((result) => {
+                        if(result.isConfirmed){
+                            window.location.href = URL_API_BASE;
+                            location.replace("planes.html");
+                            location.href ="planes.html";   
+                        }   
+                    })
 
-                // }else{
+                }else{
 
-                //     Swal.fire({
-                //         icon: 'error',
-                //         title: 'Oops...',
-                //         text: 'No pudiste activar tu plan',
-                //       })
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Grandioso',
+                        text: 'Has adquirido este plan',
+                    }).then((result) => {
+                        if(result.isConfirmed){
+                            window.location.href = URL_API_BASE;
+                            location.replace("Dash.html");
+                            location.href ="Dash.html";   
+                        }   
+                    })
 
-                // }
+                }
         },  
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            

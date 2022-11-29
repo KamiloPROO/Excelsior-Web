@@ -988,3 +988,12 @@ STYLE OF PLANS VIEW
     padding: 1%;
 }
 
+.contenedorQR{
+    width: 28%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 36%;
+    padding: 5px ;
+    background: rgb(255, 255, 255);
+}

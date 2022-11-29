@@ -21,6 +21,9 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -69,7 +72,7 @@
                         diversity_3</span>
                     <h3>Team</h3>
                 </a>
-                <a id="crearCuentaTronPutooo" class="active"><span class="material-icons-sharp">
+                <a id="crearCuentaTronPutooo" href="wallet.html" class="active"><span class="material-icons-sharp">
                         account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
@@ -106,44 +109,15 @@
             <div>
                 <br>
                 <!-- <h1 class="camilo" id="crearM">Crear Cuenta Tron</h1> -->
-                <h1 id="cuentaM">Cuenta Tron</h1>
-                <br>
-                <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
-                <br>
-                <br>
-                <h2 class="camiloOcultar" id="respuesta">
+                <h1 id="cuentaM">QR</h1>
+
             </div>
 
-
-            <div class="cardWallet" id="containerCardTron"
-                style="background:url(./assets/images/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
-                <h3 id="nombreUser" class="moverRefe">Juan Camilo</h3>
-                <h3>_____________________________________________</h3>
-                <div class="contaSaldo">
-                    <div style="display: flex; overflow: hidden;">
-                        <h1 style="margin-left: 50px; color: rgb(15, 223, 153);">$</h1>
-                        <h1 style="margin-left: 5px; color: rgb(15, 223, 153); text-align: center;"
-                            id="saldoUsdtWallet">Saldo</h1>
-                    </div>
-                    <h1>USDT</h1>
-                </div>
-                <div class="containerFechaCreada">
-                    <b class="fechaCreada" id="fechaCreada">fecha creada</b>
-                    <h3 style="font-weight: bolder; margin-left: 5px;">Creada</h3>
-                    <br>
-                </div>
-                <div class="containerFechaActu">
-                    <b class="fechaCreada" id="fechaActua">fecha creada</b>
-                    <h3 style="font-weight: bolder; margin-left: 5px;">Actualizada</h3>
-                    <br>
-                </div>
+            <div id="contenedorQR" class="contenedorQR">
+                 
             </div>
-    
-            <div style="margin-top: 120px;">
-
-                <!-- <button type="button" id="GeneramosRandom">Generar</button> -->
-                <a href="qr.html" type="button" id="GeneramosRandom" style="background: #eb94ff85; width: 20%; height: 40px; text-align: center; padding: 8px; font-weight: bold; border-radius: 10px; overflow: hidden;">PAYMENT GATEWAY</a>
-            </div>
+            <br>
+            <h1 id="subimosAdress">adres</h1>
             
 
             <div class="right2">
@@ -182,14 +156,9 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/orders.js"></script>
     <!-- <script src="./assets/js/app.js"></script> -->
+    <script defer src="qr.js"></script>
 
-    <script src="./assets/js/logica/routes/routes.js"></script>
-<!-- 
-    <script src="./assets/js/logica/datos/generarDto.js"></script>
-    <script src="./assets/js/logica/utils/HttpsRandom.js"></script>
-    <script src="./assets/js/logica/business/generarRandomBussines.js"></script>
-    <script src="./assets/js/logica/controller/generarController.js"></script>
-    <script src="./assets/js/logica/event/generarRandomEvents.js"></script> -->
+    <!-- <script src="./assets/js/logica/routes/routes.js"></script>
 
     <script src="./assets/js/logica/datos/cuentaTronDto.js"></script>
     <script src="./assets/js/logica/utils/HttpsClientCuentaTron.js"></script>
@@ -197,7 +166,7 @@
     <script src="./assets/js/logica/controller/cuentaTronController.js"></script>
     <script src="./assets/js/logica/event/crearCuentaEvents.js"></script>
 
-    <script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script>
+    <script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script> -->
 
 
 </body>

@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', e => {
             
 
                 const nom = document.getElementById('nombrePerfil');
-                const apelli = document.getElementById('apellidoPerfil')
-                const naci = document.getElementById('fecha_nacimiento')
+                // const apelli = document.getElementById('apellidoPerfil')
+                // const naci = document.getElementById('fecha_nacimiento')
                 const docu = document.getElementById('tipo_documento')
                 const tel = document.getElementById('telefono')
-                const dire = document.getElementById("direccion")
+                // const dire = document.getElementById("direccion")
 
 
                 nom.textContent = `${data.PRIMER_NOMBRE}`
                 // apelli.textContent = `${data.PRIMER_APELLIDO}`
-                apelli.textContent = "gomez"
-                naci.textContent = `${data.FECHA_NACIMIENTO}`
+                // apelli.textContent = "gomez"
+                // naci.textContent = `${data.FECHA_NACIMIENTO}`
                 docu.textContent = `${data.DOCUMENTO}`
                 tel.textContent = `${data.TELEFONO}`
-                dire.textContent = `${data.DIRECCION}`
+                // dire.textContent = `${data.DIRECCION}`
 
 
         },

@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', e => {
                 const respu4 = document.getElementById('fechaCreada')
                 const respu5 = document.getElementById('fechaActua')
 
-
                 respu.textContent = nomWallet
                 respu2.textContent = `${data.SaldoVirtual}`
                 respu4.textContent = `${data.FechaCreacion}`

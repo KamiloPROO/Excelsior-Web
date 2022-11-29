@@ -11,6 +11,8 @@ const URL_API_BASE_DATOS_PERFIL = "https://apiamingenieria.app/api/Persona";
 const URL_API_BASE_NUEVA_CONTRASENIA = "https://apiamingenieria.app/api/Usuario/CambiarContraseniaUsuario";
 const URL_API_BASE_RECOVERY_CONTRASENIA = "https://apiamingenieria.app/api/Usuario";
 
+const URL_API_BASE_RANDOM = "https://excelsiortrader.app/api/CuentaTron";
+
 const URL_API_LOGIN_USUARIOS = URL_API_BASE_USUARIOS + "/IniciarSesion";
 const URL_API_REGIS_USUARIOS = URL_API_BASE_REGISTRO + "/CrearPersona";
 const URL_API_BASE_VERIFICARCODE = URL_API_BASE_VERIFICAR + "/VerificarCodigo";
@@ -18,8 +20,10 @@ const URL_API_CREAR_CUENTA_TRON = URL_API_BASE_CREAR_TRON + "/StoreNewAccountUse
 const URL_API_LISTAR_CUENTA_TRON = URL_API_BASE_LISTAR_TRON + "/ListarCuentasTron";
 const URL_API_LISTAR_PLANES_INVER = URL_API_BASE_LISTAR_PLANES + "/ListarTiposMembresia";
 const URL_API_LISTAR_PLAN_ACTIVADO = URL_API_BASE_LISTAR_PLAN_ACTIVADO + "/ListarMisInversiones";
-const URL_API_GUARDAR_PLAN_ACTIVO = URL_API_BASE_GUARDAR_PLAN_ACTIVO + "/GuardarInversion";
+const URL_API_GUARDAR_PLAN_ACTIVO = URL_API_BASE_GUARDAR_PLAN_ACTIVO + "/SaveInvestment";
 
 const URL_API_DATOS_PERFIL = URL_API_BASE_DATOS_PERFIL + "/BuscarPersonaPorIdPersona";
 const URL_API_NUEVA_CONTRASENIA = URL_API_BASE_NUEVA_CONTRASENIA + "/CambiarContraseniaUsuario"; 
 const URL_API_RECOVERY_CONTRASENIA = URL_API_BASE_RECOVERY_CONTRASENIA + "/GenerarNuevaContraseniaUsuarioOlvidado"
+
+const URL_API_RANDOM = URL_API_BASE_RANDOM + "/GetAddressRandom"
