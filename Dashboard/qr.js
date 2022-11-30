@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', e => {  
+document.addEventListener('DOMContentLoaded', e => {
 
     const contenedorQR = document.getElementById('contenedorQR');
     const adresss = document.getElementById('subimosAdress');
@@ -11,22 +11,24 @@ document.addEventListener('DOMContentLoaded', e => {
         data: "",
         success: function (data) {
 
-        const addressPasar = data.address;
-        localStorage.setItem('codigoAddress', addressPasar)
+            const addressPasar = data.address;
+            localStorage.setItem('codigoAddress', addressPasar)
 
 
-        if ( data === null){
-            location.reload()
-        }else{
-            const QR = new QRCode(contenedorQR);
-            
-            QR.makeCode(data.address);
-            setInterval("location.reload()",100000);
-    
-            adresss.textContent = `${data.address}`
-        }
-        
-        
+            if (data === null) {
+                location.reload()
+            } else if (data.address === null) {
+                location.reload()
+            } else {
+                const QR = new QRCode(contenedorQR);
+
+                QR.makeCode(data.address);
+                setInterval("location.reload()", 100000);
+
+                adresss.textContent = `${data.address}`
+            }
+
+
 
         },
         error: function () {

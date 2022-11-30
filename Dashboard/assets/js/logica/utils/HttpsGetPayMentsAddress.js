@@ -18,8 +18,6 @@ function mandarMensaje() {
         data: {"IdUser":idpersona , "address": codAddress},
         success: function (data) {
 
-            console.log(data);
-
         if(data.total === null) {
             location.reload()
         }else if(data.total != 0) {
@@ -54,8 +52,6 @@ document.addEventListener('DOMContentLoaded', e => {
         url: "https://excelsiortrader.app/api/CuentaTron/Getpaymentsaddress",
         data: {"IdUser":idpersona , "address": codAddress},
         success: function (data) {
-
-        console.log(data);
 
         if(data.total === null) {
             location.reload()
