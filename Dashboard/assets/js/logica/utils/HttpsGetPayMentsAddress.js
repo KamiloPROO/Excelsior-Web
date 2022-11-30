@@ -2,7 +2,7 @@
 let identificadorIntervaloDeTiempo;
 
 function repetirCadaSegundo() {
-  identificadorIntervaloDeTiempo = setInterval(mandarMensaje, 10000);
+  identificadorIntervaloDeTiempo = setInterval(mandarMensaje, 5000);
 }
 
 function mandarMensaje() {
@@ -10,17 +10,19 @@ function mandarMensaje() {
     var idpersona = localStorage.getItem("idPersona");
     var codAddress = localStorage.getItem("codigoAddress");
 
+    
+
     $.ajax({
         type: "POST",
         url: "https://excelsiortrader.app/api/CuentaTron/Getpaymentsaddress",
         data: {"IdUser":idpersona , "address": codAddress},
         success: function (data) {
 
-        
+            console.log(data);
 
         if(data.total === null) {
             location.reload()
-        }else if (data.total != 0) {
+        }else if(data.total != 0) {
             Swal.fire({
                 icon: 'success',
                 title: 'succesful transaction',
@@ -32,8 +34,6 @@ function mandarMensaje() {
                 }   
             })
 
-        }else{
-            console.log(data);
         }
         
 
