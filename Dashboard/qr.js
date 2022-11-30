@@ -11,15 +11,16 @@ document.addEventListener('DOMContentLoaded', e => {
         data: "",
         success: function (data) {
 
-            const addressPasar = data.address;
-            localStorage.setItem('codigoAddress', addressPasar)
-
 
             if (data === null) {
                 location.reload()
             } else if (data.address === null) {
                 location.reload()
             } else {
+
+                const addressPasar = data.address;
+                localStorage.setItem('codigoAddress', addressPasar)
+
                 const QR = new QRCode(contenedorQR);
 
                 QR.makeCode(data.address);

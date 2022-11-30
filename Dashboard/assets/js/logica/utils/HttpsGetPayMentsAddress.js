@@ -10,13 +10,15 @@ function mandarMensaje() {
     var idpersona = localStorage.getItem("idPersona");
     var codAddress = localStorage.getItem("codigoAddress");
 
-    
+   
 
     $.ajax({
         type: "POST",
         url: "https://excelsiortrader.app/api/CuentaTron/Getpaymentsaddress",
         data: {"IdUser":idpersona , "address": codAddress},
         success: function (data) {
+
+            console.log(data);
 
         if(data.total === null) {
             location.reload()
