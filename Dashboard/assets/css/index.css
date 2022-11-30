@@ -34,7 +34,7 @@
    align-items: center;
    height: 1.6rem;
    width: 4.2rem;
-   cursor:pointer;
+   cursor: pointer;
    border-radius: var(--border-radius-1);
 }
 
@@ -63,7 +63,7 @@
 
 .right2 .recent-updates {
    margin-top: 1rem;
-   
+
 }
 
 .right2 .recent-updates h2 {
@@ -71,13 +71,13 @@
 }
 
 
-.right2 .recent-updates .updates{
-    background: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
-    
+.right2 .recent-updates .updates {
+   background: var(--color-white);
+   padding: var(--card-padding);
+   border-radius: var(--card-border-radius);
+   box-shadow: var(--box-shadow);
+   transition: all 300ms ease;
+
 }
 
 
@@ -86,12 +86,12 @@
 
 }
 
-.right2 .recent-updates .updates .update{
+.right2 .recent-updates .updates .update {
    display: grid;
-   grid-template-columns:  2.6rem auto;
+   grid-template-columns: 2.6rem auto;
    gap: 1rem;
    margin-bottom: 1rem;
-   
+
 
 }
 
@@ -136,7 +136,7 @@
    padding: 0.6rem;
    color: var(--color-white);
    border-radius: 50%;
-   background:var(--color-primary);
+   background: var(--color-primary);
    display: flex;
 
 }
@@ -145,6 +145,7 @@
    background: var(--color-danger);
 
 }
+
 .right2 .sales-analytics .item.customers .icon {
    background: var(--color-success);
 
@@ -162,7 +163,7 @@
 .right2 .sales-analytics .add-product div {
    display: flex;
    align-items: center;
-   gap:0.6rem;
+   gap: 0.6rem;
 }
 
 .right2 .sales-analytics .add-product div h3 {
@@ -175,12 +176,12 @@
       display: none;
    }
 
-   .lobby{
+   .lobby {
       display: none;
    }
- 
-   .video{
-      width: 700px ;
+
+   .video {
+      width: 700px;
    }
 
 }
@@ -191,32 +192,34 @@
 
 @media (max-width: 450px) {
 
-   .cuerpo{
+   .cuerpo {
       width: 100%;
    }
-   .video{
-      width: 400px ;
+
+   .video {
+      width: 400px;
       margin-top: -150px;
    }
 
-   .todo1{
+   .todo1 {
       width: 98%;
    }
 
-    .insights{
+   .insights {
       margin-top: -120px;
    }
-   .right2{
+
+   .right2 {
       width: 96%;
       margin-left: 4px;
    }
 
-   .todo1 .cardsInversion{
+   .todo1 .cardsInversion {
       width: 390px;
       height: auto;
-   } 
+   }
 
-  .right2 .top{
+   .right2 .top {
       position: fixed;
       top: 0;
       left: 0;
@@ -228,67 +231,70 @@
       margin: 0;
       z-index: 2;
       box-shadow: 0 1rem 1rem var(--color-light);
-  }
-  .right2 .top .theme-toggler {
+   }
+
+   .right2 .top .theme-toggler {
       width: 4.4rem;
       position: absolute;
       left: 66%;
       display: none;
-      
-  }
 
-  .right2 .profile .info {
+   }
+
+   .right2 .profile .info {
       display: none;
-  }
+   }
 
 
-  .quitarDash{
-   display: none;
-  }
+   .quitarDash {
+      display: none;
+   }
 
-  .right2 .top button {
+   .right2 .top button {
       display: inline-block;
       background: transparent;
       cursor: pointer;
       color: var(--color-dark);
       position: absolute;
       left: 1rem;
-  }
+   }
 
-  .right2 .top  button span {
+   .right2 .top button span {
       font-size: 2rem;
 
-  }
+   }
 }
 
 @media (max-width: 500px) {
 
-   .cuerpo{
+   .cuerpo {
       width: 100%;
    }
-   .video{
+
+   .video {
       width: 440%;
       margin-top: -150px;
    }
 
-   .todo1{
+   .todo1 {
       width: 98%;
    }
 
-    .insights{
+   .insights {
       margin-top: -120px;
    }
-   .right2{
+
+   .right2 {
       width: 96%;
       margin-left: 4px;
    }
 
-   .todo1 .cardsInversion{
+   .todo1 .cardsInversion {
       width: 390px;
       height: auto;
-   } 
+   }
 
-  .right2 .top{
+   .right2 .top {
       position: fixed;
       top: 0;
       left: 0;
@@ -300,123 +306,152 @@
       margin: 0;
       z-index: 2;
       box-shadow: 0 1rem 1rem var(--color-light);
-  }
-  .right2 .top .theme-toggler {
+   }
+
+   .right2 .top .theme-toggler {
       width: 4.4rem;
       position: absolute;
       left: 66%;
       display: none;
-      
-  }
 
-  .right2 .profile .info {
+   }
+
+   .right2 .profile .info {
       display: none;
-  }
+   }
 
 
-  .quitarDash{
-   display: none;
-  }
+   .quitarDash {
+      display: none;
+   }
 
-  .right2 .top button {
+   .right2 .top button {
       display: inline-block;
       background: transparent;
       cursor: pointer;
       color: var(--color-dark);
       position: absolute;
       left: 1rem;
-  }
+   }
 
-  .right2 .top  button span {
+   .right2 .top button span {
       font-size: 2rem;
 
-  }
+   }
 }
 
+/* Codigo QR */
+
+@media (max-width: 500px) {
+
+   .contenedorQR{
+     
+    margin-left: 50%;
+    margin-top: 20px;
+    width: 40%;
+
+   }
+
+   .adress{
+      font-size: 20px;
+      margin-left: 70px;
+   }
+
+   .btnCamilo{
+      margin-left: 40%;
+   }
+
+   .parra{
+      margin-left: 20%;
+      width: 100%;
+   }
+}
 
 
 /* wallet */
 
- @media (max-width: 500px) {
+@media (max-width: 500px) {
 
-.form-content{
-   width: 110%;
-}
+   .form-content {
+      width: 110%;
+   }
 
-.cardWallet{
-   width: 115%;
-   height: auto;
-   margin-left: 20px;
-}
+   .cardWallet {
+      width: 115%;
+      height: auto;
+      margin-left: 20px;
+   }
 
-.fechaCreada{
-    font-weight: bolder; 
-    width: 80%;
-}
+   .fechaCreada {
+      font-weight: bolder;
+      width: 80%;
+   }
 
-.containerFechaActu{
-   display: flex; margin-left: 38%; 
-   margin-top: 1%; padding: 1%;
-}
+   .containerFechaActu {
+      display: flex;
+      margin-left: 38%;
+      margin-top: 1%;
+      padding: 1%;
+   }
 
-.containerFechaCreada {
-   display: flex;
-   margin-left: 40%;
-   margin-top: 10%;
-}
+   .containerFechaCreada {
+      display: flex;
+      margin-left: 40%;
+      margin-top: 10%;
+   }
 
-.moversaldos{
-   margin-left: 43%;
-}
+   .moversaldos {
+      margin-left: 43%;
+   }
 
-.creado{
-   margin-left: 50%;
-}
+   .creado {
+      margin-left: 50%;
+   }
 
-.moverfechas{
-   width: 100%;
-   margin-left: 50px;
-   font-size: 15px !important;
-}
+   .moverfechas {
+      width: 100%;
+      margin-left: 50px;
+      font-size: 15px !important;
+   }
 
-.moverRefe{
+   .moverRefe {
 
-font-size: 20px !important;
+      font-size: 20px !important;
 
-}
+   }
 
-.right2 .top{
-   position: fixed;
-   top: 0;
-   left: 0;
-   align-items: center;
-   padding: 0 0.8rem;
-   height: 4.6rem;
-   background: var(--color-white);
-   width: 100%;
-   margin: 0;
-   z-index: 2;
-   box-shadow: 0 1rem 1rem var(--color-light);
+   .right2 .top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
 
-}
+   }
 
 }
 
 @media (min-width: 768px) {
-   .cardWallet{
+   .cardWallet {
       width: 75%;
    }
 }
 
 
 @media (min-width: 1024px) {
-   .cardWallet{
+   .cardWallet {
       width: 50%;
    }
 
 }
 
- /* @media (max-width: 450px) {
+/* @media (max-width: 450px) {
    .card{
       width: 111%;
       margin-left: 20px;
