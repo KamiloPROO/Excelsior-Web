@@ -6,8 +6,8 @@ perfil.addEventListener("click", function(e){
 
     Swal.fire({
         icon: 'error',
-        title: 'Estamos en mantenimiento',
-        text: 'Muy pronto contaras con esta opcion',
+        title: 'We are in maintenance',
+        text: 'Very soon we will have this option',
     })
 
 })

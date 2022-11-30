@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', e => {
     const contenedorQR = document.getElementById('contenedorQR');
     const adresss = document.getElementById('subimosAdress');
 
-
     $.ajax({
         type: "GET",
         url: "https://excelsiortrader.app/api/CuentaTron/GetAddressRandom",
