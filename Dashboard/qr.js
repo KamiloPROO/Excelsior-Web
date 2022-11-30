@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', e => {
+
+document.addEventListener('DOMContentLoaded', e => {  
 
     const contenedorQR = document.getElementById('contenedorQR');
     const adresss = document.getElementById('subimosAdress');
-    // var idpersona = localStorage.getItem("idPersona");
+
 
     $.ajax({
         type: "GET",
@@ -10,27 +11,30 @@ document.addEventListener('DOMContentLoaded', e => {
         data: "",
         success: function (data) {
 
+       
+
         console.log(data);
+
+        if ( data === null){
+            location.reload()
+        }else{
+
+            const QR = new QRCode(contenedorQR);
+            const addressPasar = data.address;
+    
+    
+            QR.makeCode(data.address);
+            setInterval("location.reload()",100000);
+    
+            localStorage.setItem('codigoAddress', addressPasar)
+            adresss.textContent = `${data.address}`
+        }
         
-        const QR = new QRCode(contenedorQR);
-
-
-        QR.makeCode(data.address);
-
-
-        adresss.textContent = `${data.address}`
+        
 
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")
         }
     });
-
-
-
-
-
-
-
-
 })
