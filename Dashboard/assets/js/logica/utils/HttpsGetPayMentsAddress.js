@@ -44,8 +44,6 @@ function mandarMensaje() {
     });
 }
 
-
-
 document.addEventListener('DOMContentLoaded', e => {
 
     var idpersona = localStorage.getItem("idPersona");
