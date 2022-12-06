@@ -1,5 +1,5 @@
 const URL_API_BASE = "http://52.175.225.67:63203";
-const URL_API_BASE_USUARIOS = "https://apiamingenieria.app/api/Persona";
+const URL_API_BASE_USUARIOS = "https://apiamingenieria.app/";
 const URL_API_BASE_REGISTRO = "https://apiamingenieria.app/";
 const URL_API_BASE_VERIFICAR = "https://apiamingenieria.app/";
 const URL_API_BASE_CREAR_TRON = "https://excelsiortrader.app/api/Cuenta";
@@ -13,7 +13,7 @@ const URL_API_BASE_RECOVERY_CONTRASENIA = "https://apiamingenieria.app/api/Usuar
 
 const URL_API_BASE_RANDOM = "https://excelsiortrader.app/api/CuentaTron";
 
-const URL_API_LOGIN_USUARIOS = URL_API_BASE_USUARIOS + "/IniciarSesion";
+const URL_API_LOGIN_USUARIOS = URL_API_BASE_USUARIOS + "/api/User/SignIn";
 const URL_API_REGIS_USUARIOS = URL_API_BASE_REGISTRO + "api/User/RegisterNewUser";
 const URL_API_BASE_VERIFICARCODE = URL_API_BASE_VERIFICAR + "api/User/VerifyCode";
 const URL_API_CREAR_CUENTA_TRON = URL_API_BASE_CREAR_TRON + "/StoreNewAccountUser";

@@ -5,17 +5,16 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
 
-                console.log(data.Id);
-                console.log(data.Celular);
                 console.log(data);
 
-                const idper = data.Id;
-                const name = data.PrimerNombre;
-                const celUser = data.Celular;
+                const metaData = data.Data;
 
-                console.log(name);
-                
-              if (data.CodigoRespuesta === 200 ){
+                const idper = metaData.IdPerson;
+                const name = metaData.Names;
+                const celUser = metaData.Phone;
+
+                console.log("id "  + idper);
+              if (data.CodeResponse == 200 ){
 
                 localStorage.setItem("idPersona",idper);
                 localStorage.setItem("PrimerNombre",name);

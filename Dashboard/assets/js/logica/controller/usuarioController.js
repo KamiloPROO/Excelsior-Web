@@ -1,9 +1,9 @@
 function iniciarSesion() {
+    
     const usuario = {
 
-        IdPersona: "",
-        IdProyecto: 4,
-        Login: $("#User").val(),
+        IdProject: "4",
+        UserName: $("#User").val(),
         Password: $("#Password").val(),
 
     }
