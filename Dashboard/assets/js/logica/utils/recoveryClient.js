@@ -7,28 +7,30 @@ function CallEndPointPost(url, jsonArgs) {
 
             console.log(data);
 
-            if (data === null) {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'The user who entered is not registered',
-                })
-            } else if (data.Codigo === 200) {
+            console.log(data);
 
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Magnificent',
-                    text: 'please chechk your mail or number phone',
-                }).then((result) => {
+            const response = data.Data;
 
-                    if(result.isConfirmed){
-                        window.location.href = URL_API_BASE;
-                        location.replace("signIn.html");
-                        location.href = "signIn.html";  
-                    }   
-                })
 
-            } ;
+           if (data.CodeResponse == 200 ){
+
+               const PhoneRecover = response.Phone;
+
+               localStorage.setItem("phoneUserRecover", PhoneRecover);
+
+               window.location.href = URL_API_BASE;
+               location.replace("recoveryPass.html");
+               location.href ="recoveryPass.html";
+
+           }else if (data.CodeResponse == 409) {
+
+               Swal.fire({
+                   icon: 'error',
+                   title: 'Oops...',
+                   text: 'No te encuentras registrado en nuestro sistema',
+               })
+
+           }
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")

@@ -8,13 +8,14 @@ function CallEndPointPost(url, jsonArgs) {
                 console.log(data);
 
                 const metaData = data.Data;
+                
+              if (data.CodeResponse == 200 ){
 
+                
                 const idper = metaData.IdPerson;
                 const name = metaData.Names;
                 const celUser = metaData.Phone;
 
-                console.log("id "  + idper);
-              if (data.CodeResponse == 200 ){
 
                 localStorage.setItem("idPersona",idper);
                 localStorage.setItem("PrimerNombre",name);

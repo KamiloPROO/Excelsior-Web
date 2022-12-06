@@ -6,6 +6,8 @@ recovey.addEventListener("click", function(e){
     const userr = document.getElementById("recoveryUserio").value
     const correoo = document.getElementById("recoveryEmailContra").value
 
+    localStorage.setItem("correoRecovery",correoo);
+
     if ( userr === null || userr === "" ){
 
         Swal.fire({
