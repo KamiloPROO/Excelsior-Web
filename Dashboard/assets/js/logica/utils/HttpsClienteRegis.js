@@ -5,21 +5,31 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
                 
-                if (data.Codigo === 200 ){
+            console.log(data);
 
-                    window.location.href = URL_API_BASE;
-                    location.replace("verify.html");
-                    location.href ="verify.html";
+            const response = data.Data;
+            
 
-                }else{
+           if (data.CodeResponse == 200 ){
 
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Ya te encuentras registrado en nuestro sistema',
-                      })
+               const PhoneRegis = response.Phone;
+               const NumIDRegis = response.IdPerson;
 
-                }
+               localStorage.setItem("phoneUser", PhoneRegis);
+               localStorage.setItem("IdUserRegis", NumIDRegis);
+               window.location.href = URL_API_BASE;
+               location.replace("verify.html");
+               location.href ="verify.html";
+
+           }else if (data.CodeResponse == 409) {
+
+               Swal.fire({
+                   icon: 'error',
+                   title: 'Oops...',
+                   text: 'Ya te encuentras registrado en nuestro sistema',
+               })
+
+           }
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            

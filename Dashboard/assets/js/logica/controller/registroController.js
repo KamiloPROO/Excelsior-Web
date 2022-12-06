@@ -1,36 +1,89 @@
 function registrarUsuario() {
+
+    const melo = document.getElementById("selectTipDocument").value
     
-            const usuario = {
+    if (melo == "Tarjeta de Identidad"){
 
-                PrimerNombre: $("#NameRegistro").val(),
-                SegundoNombre: "",
-                PrimerApellidos: "",
-                SegundoApellido: "",
-                Sexo: "",
-                FechaNacimiento:"",
-                TipoDocumento: "",
-                Documento: $("#DocumentoRegistro").val(),
-                EstadoCivil: "",
-                Telefono: $("#PhoneRegistro").val(),
-                Celular: $("#PhoneRegistro").val(),
-                Direccion: "",
-                Correo: $("#CorreoRegistro").val(),
-                IdProyecto: "4",
-                IdRol: "1",
+        const tarjeta = 1
 
-            }
-            
-            registro(usuario);
+        const usuario = {
+
+            FirstName: $("#NameRegistro").val(),
+            SecondName: "",
+            FirstSurname:  "",
+            SecondSurname: "",
+            Sex: "",
+            DateOfBirth: "",
+            DocumentType: tarjeta,
+            Document: $("#DocumentoRegistro").val(),
+            MaritalStatus: "",
+            Phone: $("#PhoneRegistro").val(),
+            CellPhone: $("#PhoneRegistro").val(),
+            Direction: "",
+            Email: $("#CorreoRegistro").val(),
+            IdProject: "4",
+            Passworrd: "",
+            IdRole: "1",
+    
+        }
+    
+        registro(usuario);
+        
+    }else if (melo == "Cedula de Ciudadania"){
+
+        const cedula = 2;
+
+        const usuario = {
+
+            FirstName: $("#NameRegistro").val(),
+            SecondName: "",
+            FirstSurname:  "",
+            SecondSurname: "",
+            Sex: "",
+            DateOfBirth: "",
+            DocumentType: cedula,
+            Document: $("#DocumentoRegistro").val(),
+            MaritalStatus: "",
+            Phone: $("#PhoneRegistro").val(),
+            CellPhone: $("#PhoneRegistro").val(),
+            Direction: "",
+            Email: $("#CorreoRegistro").val(),
+            IdProject: "4",
+            Passworrd: "",
+            IdRole: "1",
+    
+        }
+    
+        registro(usuario);
+
+    }else if ( melo == "Pasaporte"){
+
+        const pasaporte = 3;
+
+        const usuario = {
+
+            FirstName: $("#NameRegistro").val(),
+            SecondName: "",
+            FirstSurname:  "",
+            SecondSurname: "",
+            Sex: "",
+            DateOfBirth: "",
+            DocumentType: pasaporte,
+            Document: $("#DocumentoRegistro").val(),
+            MaritalStatus: "",
+            Phone: $("#PhoneRegistro").val(),
+            CellPhone: $("#PhoneRegistro").val(),
+            Direction: "",
+            Email: $("#CorreoRegistro").val(),
+            IdProject: "4",
+            Passworrd: "",
+            IdRole: "1",
+    
+        }
+    
+        registro(usuario);
+
+    }
       
 }
 
-// function generateHash(string)
-// {
-        
-//     var md = forge.md.sha256.create();  
-//         md.start();  
-//         md.update(string, "utf8");  
-//         var hashText = md.digest().toHex();  
-//         return hashText
-//         document.getElementById("hashText").innerHTML = hashText;
-//     }

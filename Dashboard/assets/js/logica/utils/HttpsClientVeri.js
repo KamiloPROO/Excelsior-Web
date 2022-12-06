@@ -5,17 +5,24 @@ function CallEndPointPost(url, jsonArgs) {
         data: jsonArgs,
         success: function (data) {
 
-                if (data === true ){
+            console.log(data);
+
+
+            if (data.CodeResponse == 400 ){
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Codigo de verificacion incorrecto',
+                  })
+
+            }else if (data.CodeResponse == 200){
+
                 window.location.href = URL_API_BASE;
                 location.replace("signIn.html");
                 location.href ="signIn.html";
-                }else{
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Codigo de Verificacion Incorrecto',
-                      })
-                }
+
+            }
         },  
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            

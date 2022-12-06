@@ -1,15 +1,16 @@
 
 function verificarCode() {
 
-    var celu = localStorage.getItem("txtPhone");
-    
+    var loginn = localStorage.getItem("phoneUser")
+    var IdUser = localStorage.getItem("IdUserRegis")
+
     const usuario = {
 
-        IdPersona: "",
-        IdProyecto: 4,
-        CodigoVerificacion: $("#VerifyCode").val(),
-        Login: celu,
-
+        IdPerson: IdUser,
+        IdProject: "4",
+        CodeVerification: $("#VerifyCode").val(),
+        Login: loginn,
+        IsRecoverPassword: "false"
     }
     
     verificar(usuario);
