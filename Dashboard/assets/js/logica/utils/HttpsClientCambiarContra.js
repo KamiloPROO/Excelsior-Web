@@ -9,7 +9,7 @@ function CallEndPointPostCambiarContra(url, jsonArgs) {
 
             console.log(data);
 
-            if (data.Codigo === 200) {
+            if (data.CodeResponse == 200) {
 
                 Swal.fire({
                     icon: 'success',

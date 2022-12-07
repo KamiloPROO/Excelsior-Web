@@ -1,14 +1,14 @@
 function NuevaContrasenia() {
 
     var idpersona = localStorage.getItem("idPersona");
-    var celu = localStorage.getItem("txtPhone");
+    var celu = localStorage.getItem("celularUser");
 
     const cambiarContrasenia = {
         
-        IdPersona: idpersona,
-        IdProyecto: 4,
+        IdPerson: idpersona,
+        IdProject: "4",
         Login: celu,
-        ContraseniaNueva: $("#inputContraNueva").val(),
+        Password: $("#inputContraNueva").val(),
         
     }
     
