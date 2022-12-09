@@ -14,9 +14,11 @@ function CallEndPointPost(url, jsonArgs) {
 
            if (data.CodeResponse == 200 ){
 
-               const PhoneRecover = response.Phone;
+            const idper = response.IdPerson;
+            const cellphone = response.Phone;
 
-               localStorage.setItem("phoneUserRecover", PhoneRecover);
+            localStorage.setItem("idPersona",idper);
+            localStorage.setItem("celUser",cellphone);
 
                window.location.href = URL_API_BASE;
                location.replace("recoveryPass.html");

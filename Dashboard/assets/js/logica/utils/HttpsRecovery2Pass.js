@@ -10,12 +10,16 @@ function CallEndPointPost(url, jsonArgs) {
 
                 console.log(data);
 
-                const idper = dataData.IdPerson;
+                
 
                 if (data.CodeResponse === 200 ){
-                   
+
+                    const idper = dataData.IdPerson;
+                    const cellphone = dataData.Phone;
 
                     localStorage.setItem("idPersona",idper);
+                    localStorage.setItem("celUser",cellphone);
+
                     window.location.href = URL_API_BASE;
                     location.replace("signIn.html");
                     location.href ="signIn.html";

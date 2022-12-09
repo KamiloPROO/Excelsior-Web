@@ -1,6 +1,6 @@
 function verificacionPersonaSend() {
 
-    var loginn = localStorage.getItem("celularUser")
+    var loginn = localStorage.getItem("celUser")
     var IdUser = localStorage.getItem("idPersona")
 
     const usuario = {
