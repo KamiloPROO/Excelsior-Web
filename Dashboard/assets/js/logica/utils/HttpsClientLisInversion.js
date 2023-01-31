@@ -50,10 +50,13 @@ document.addEventListener('DOMContentLoaded', e => {
   var idpersona = localStorage.getItem("idPersona");
 
   const nombre = document.getElementById("name")
+  const balanceinvest = document.getElementById("balanceInvest")
   var namee = localStorage.getItem("PrimerNombre")
  
+  var resBalnace = localStorage.getItem("balInvest")
       
   nombre.textContent = namee;
+  balanceinvest.textContent = resBalnace;
 
   console.log(namee);
 
@@ -67,7 +70,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
       console.log(data.Data);
 
-      var metaData = data.Data
+      var metaData = data.Data;
 
       for (const datos of metaData){
 

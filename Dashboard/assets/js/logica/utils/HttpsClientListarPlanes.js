@@ -93,8 +93,13 @@ document.addEventListener('DOMContentLoaded', e => {
             const ComFeePlan0 = document.getElementById('comfeePlan0');
 
             const idPlan0 = data[0].Id
+            const salMin0 = data[0].RangoInicial
+            const salMax0 = data[0].RangoFinal
 
+            localStorage.setItem("salMini0",salMin0);
+            localStorage.setItem("salMaxi0",salMax0);
             localStorage.setItem("idPlan0",idPlan0);
+           
             ComPlan0.textContent = `${data[0].Descripcion}`
             ComSaldoIniPlan0.textContent = `${data[0].RangoInicial}`
             ComSaldoFinPlan0.textContent = `${data[0].RangoFinal}`
@@ -110,6 +115,11 @@ document.addEventListener('DOMContentLoaded', e => {
             const ComFeePlan1 = document.getElementById('comfeePlan1');
 
             const idPlan1 = data[1].Id
+            const salMin1 = data[1].RangoInicial
+            const salMax1 = data[1].RangoFinal
+
+            localStorage.setItem("salMini1",salMin1);
+            localStorage.setItem("salMaxi1",salMax1);
 
             localStorage.setItem("idPlan1",idPlan1);
             ComPlan1.textContent = `${data[1].Descripcion}`
@@ -120,6 +130,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
             //comprar plan orange
             const idPlan2 = data[2].Id
+            const salMin2 = data[2].RangoInicial
+            const salMax2 = data[2].RangoFinal
+
+            localStorage.setItem("salMini2",salMin2);
+            localStorage.setItem("salMaxi2",salMax2);
 
             localStorage.setItem("idPlan2",idPlan2);
             const ComPlan2 = document.getElementById('comPlan2');
@@ -137,6 +152,11 @@ document.addEventListener('DOMContentLoaded', e => {
             //comprar plan rosa
 
             const idPlan3 = data[3].Id
+            const salMin3 = data[3].RangoInicial
+            const salMax3 = data[3].RangoFinal
+
+            localStorage.setItem("salMini3",salMin3);
+            localStorage.setItem("salMaxi3",salMax3);
 
             localStorage.setItem("idPlan3",idPlan3);
             const ComPlan3 = document.getElementById('comPlan3');
@@ -154,6 +174,11 @@ document.addEventListener('DOMContentLoaded', e => {
             //comprar plan rojo
 
             const idPlan4 = data[4].Id
+            const salMin4 = data[4].RangoInicial
+            const salMax4 = data[4].RangoFinal
+
+            localStorage.setItem("salMini4",salMin4);
+            localStorage.setItem("salMaxi4",salMax4);
 
             localStorage.setItem("idPlan4",idPlan4);
             const ComPlan4 = document.getElementById('comPlan4');
@@ -172,6 +197,11 @@ document.addEventListener('DOMContentLoaded', e => {
             //comprar plan aqua
 
             const idPlan5 = data[5].Id
+            const salMin5 = data[5].RangoInicial
+            const salMax5 = data[5].RangoFinal
+
+            localStorage.setItem("salMini5",salMin5);
+            localStorage.setItem("salMaxi5",salMax5);
 
             localStorage.setItem("idPlan5",idPlan5);
             const ComPlan5 = document.getElementById('comPlan5');

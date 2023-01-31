@@ -199,7 +199,8 @@ window.addEventListener("click", function(e){
 comprarPlan1.addEventListener("click", function(){
 
     const montoplan1 = document.getElementById("montoOperarPlan0").value
-
+    const saldoMin1 = localStorage.getItem("salMini0")
+    const saldoMax1 = localStorage.getItem("salMaxi0")
 
     if (montoplan1 === null || montoplan1 === "" ){
 
@@ -210,6 +211,23 @@ comprarPlan1.addEventListener("click", function(){
             
         })
 
+    }else if (saldoMin1 > montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es menor a la cantidad minima de inversion (cantidad minima $ ${saldoMin1})`,
+            
+        })
+        
+    }else if (saldoMax1 < montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es mayor a la cantidad maxima de inversion (cantidad maxima $ ${saldoMax1})`,
+            
+        })
     }else{
 
         GuardarPlanActivado()
@@ -222,6 +240,8 @@ comprarPlan1.addEventListener("click", function(){
 comprarPlan2.addEventListener("click", function(){
 
     const montoplan1 = document.getElementById("montoOperarPlan1").value
+    const saldoMin1 = localStorage.getItem("salMini1")
+    const saldoMax1 = localStorage.getItem("salMaxi1")
 
 
     if (montoplan1 === null || montoplan1 === "" ){
@@ -233,6 +253,22 @@ comprarPlan2.addEventListener("click", function(){
             
         })
 
+    }else if (saldoMin1 > montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es menor a la cantidad minima de inversion (cantidad minima $ ${saldoMin1})`,
+            
+        })
+    }else if (saldoMax1 < montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es mayor a la cantidad maxima de inversion (cantidad maxima $ ${saldoMax1})`,
+            
+        })
     }else{
 
         GuardarPlanActivado1()
@@ -244,6 +280,8 @@ comprarPlan3.addEventListener("click", function(){
 
 
     const montoplan1 = document.getElementById("montoOperarPlan2").value
+    const saldoMin1 = localStorage.getItem("salMini2")
+    const saldoMax1 = localStorage.getItem("salMaxi2")
 
 
     if (montoplan1 === null || montoplan1 === "" ){
@@ -255,6 +293,22 @@ comprarPlan3.addEventListener("click", function(){
             
         })
 
+    }else if (saldoMin1 > montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es menor a la cantidad minima de inversion (cantidad minima $ ${saldoMin1})`,
+            
+        })
+    }else if (saldoMax1 < montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es mayor a la cantidad maxima de inversion (cantidad maxima $ ${saldoMax1})`,
+            
+        })
     }else{
 
         GuardarPlanActivado2()
@@ -267,6 +321,8 @@ comprarPlan4.addEventListener("click", function(){
 
 
     const montoplan1 = document.getElementById("montoOperarPlan3").value
+    const saldoMin1 = localStorage.getItem("salMini3")
+    const saldoMax1 = localStorage.getItem("salMaxi3")
 
 
     if (montoplan1 === null || montoplan1 === "" ){
@@ -278,6 +334,22 @@ comprarPlan4.addEventListener("click", function(){
             
         })
 
+    }else if (saldoMin1 > montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es menor a la cantidad minima de inversion (cantidad minima $ ${saldoMin1})`,
+            
+        })
+    }else if (saldoMax1 < montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es mayor a la cantidad maxima de inversion (cantidad maxima $ ${saldoMax1})`,
+            
+        })
     }else{
 
         GuardarPlanActivado3()
@@ -290,6 +362,8 @@ comprarPlan5.addEventListener("click", function(){
 
 
     const montoplan1 = document.getElementById("montoOperarPlan4").value
+    const saldoMin1 = localStorage.getItem("salMini4")
+    const saldoMax1 = localStorage.getItem("salMaxi4")
 
 
     if (montoplan1 === null || montoplan1 === "" ){
@@ -301,6 +375,22 @@ comprarPlan5.addEventListener("click", function(){
             
         })
 
+    }else if (saldoMin1 > montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es menor a la cantidad minima de inversion (cantidad minima $ ${saldoMin1})`,
+            
+        })
+    }else if (saldoMax1 < montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es mayor a la cantidad maxima de inversion (cantidad maxima $ ${saldoMax1})`,
+            
+        })
     }else{
 
         GuardarPlanActivado4()
@@ -313,6 +403,8 @@ comprarPlan6.addEventListener("click", function(){
 
 
     const montoplan1 = document.getElementById("montoOperarPlan5").value
+    const saldoMin1 = localStorage.getItem("salMini5")
+    const saldoMax1 = localStorage.getItem("salMaxi5")
 
 
     if (montoplan1 === null || montoplan1 === "" ){
@@ -324,6 +416,22 @@ comprarPlan6.addEventListener("click", function(){
             
         })
 
+    }else if (saldoMin1 > montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es menor a la cantidad minima de inversion (cantidad minima $ ${saldoMin1})`,
+            
+        })
+    }else if (saldoMax1 < montoplan1){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `el saldo a invertir es mayor a la cantidad maxima de inversion (cantidad maxima $ ${saldoMax1})`,
+            
+        })
     }else{
 
         GuardarPlanActivado5()

@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', e => {
                 const respu5 = document.getElementById('fechaActua')
 
                 const referen = data.Referencia;
+                const balanInvest = data.BalanceInvest;
 
                 localStorage.setItem("numReferen",referen);
+                localStorage.setItem("balInvest", balanInvest);
+
 
                 respu.textContent = nomWallet
                 respu2.textContent = `${data.SaldoVirtual}`
