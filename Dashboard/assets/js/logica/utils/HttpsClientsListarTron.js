@@ -1,4 +1,44 @@
 
+function crearCuentaTronDirecta() {
+
+    var idpersona = localStorage.getItem("idPersona");
+    var nomUser = localStorage.getItem("PrimerNombre");
+    var celUser = localStorage.getItem("celularUser");
+
+    $.ajax({
+        type: "POST",
+        url: "https://excelsiortrader.app/api/Cuenta/StoreNewAccountUser",
+        data: { "Referencia": "", "NombrePersona":  nomUser, "Telefono": celUser, "IdUsuario": idpersona, "EstadoActivo": "true", "FechaCreacion": "", "FechaActualizacion": "", "SaldoVirtual":"" },
+        success: function (data) {
+
+            console.log(data);
+
+            if (data.Codigo === 200) {
+
+                window.location.href = URL_API_BASE;
+                location.replace("Wallet.html");
+                location.href = "Wallet.html";
+
+
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'No pudimos crear tu cuenta',
+                })
+            };
+
+
+        },
+        error: function () {
+            alert("Ha ocurrido un error, por favor vuelva a intentarlo")
+        }
+    });
+
+}
+
+
+
 document.addEventListener('DOMContentLoaded', e => {
 
     var idpersona = localStorage.getItem("idPersona");
@@ -22,7 +62,7 @@ document.addEventListener('DOMContentLoaded', e => {
                 const referen = data.Referencia;
                 const balanInvest = data.BalanceInvest;
 
-                localStorage.setItem("numReferen",referen);
+                localStorage.setItem("numReferen", referen);
                 localStorage.setItem("balInvest", balanInvest);
 
 
@@ -37,8 +77,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
 
             } else {
-                document.getElementById('crearCuentaTron2').classList.toggle("camiloOcultar")
-                document.getElementById('crearCuentaTron2').classList.toggle("camilo")
+
+                // document.getElementById('crearCuentaTron2').classList.toggle("camiloOcultar")
+                // document.getElementById('crearCuentaTron2').classList.toggle("camilo")
+
+                crearCuentaTronDirecta()
 
             }
         },

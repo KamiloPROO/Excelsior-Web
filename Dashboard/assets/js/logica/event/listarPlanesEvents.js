@@ -243,6 +243,11 @@ comprarPlan2.addEventListener("click", function(){
     const saldoMin1 = localStorage.getItem("salMini1")
     const saldoMax1 = localStorage.getItem("salMaxi1")
 
+    
+    console.log(saldoMin1);
+    console.log(saldoMax1);
+    console.log(montoplan1);
+
 
     if (montoplan1 === null || montoplan1 === "" ){
 
