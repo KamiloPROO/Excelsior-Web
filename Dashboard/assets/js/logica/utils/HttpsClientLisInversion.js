@@ -65,7 +65,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
       console.log(data);
 
-      for (const datos of data){
+      console.log(data.Data);
+
+      var metaData = data.Data
+
+      for (const datos of metaData){
 
        const productList = document.getElementById("product-list");
        const element = document.createElement("div")
@@ -88,7 +92,7 @@ document.addEventListener('DOMContentLoaded', e => {
              <h3>${datos.RangoFinal}</h3>
              <br>
              <h3>Amount Invested USD</h3>
-             <h3 style="color: rgb(7, 220, 23)">${datos.Cant_invertir}</h3>
+             <h3 style="color: rgb(7, 220, 23)">${datos.CantInvest}</h3>
            </div>
        
        </div>

@@ -8,7 +8,7 @@ function repetirCadaSegundo() {
 function mandarMensaje() {
 
     var idpersona = localStorage.getItem("idPersona");
-    var codAddress = localStorage.getItem("codigoAddress");
+    var codAddress = localStorage.getItem("numReferen");
 
    
 
@@ -47,13 +47,15 @@ function mandarMensaje() {
 document.addEventListener('DOMContentLoaded', e => {
 
     var idpersona = localStorage.getItem("idPersona");
-    var codAddress = localStorage.getItem("codigoAddress");
+    var codAddress = localStorage.getItem("numReferen");
 
     $.ajax({
         type: "POST",
         url: "https://excelsiortrader.app/api/CuentaTron/Getpaymentsaddress",
         data: {"IdUser":idpersona , "address": codAddress},
         success: function (data) {
+
+            console.log(data);
 
         if(data.total === null) {
             location.reload()
