@@ -11,6 +11,17 @@
  */
 /* ============Rigth============ */
 
+.btnQR{
+   background: #eb94ff85; 
+   width: 20%; 
+   height: 40px; 
+   text-align: center; 
+   padding: 8px; 
+   font-weight: bold;
+   border-radius: 10px; 
+   overflow: hidden;
+}
+
 .right2 {
    margin-top: 1.4rem;
 }
@@ -353,8 +364,8 @@
    }
 
    .adress{
-      font-size: 20px;
-      margin-left: 70px;
+      font-size: 14px;
+      margin-left: 5px;
    }
 
    .btnCamilo{
@@ -374,6 +385,18 @@
 
    .form-content {
       width: 110%;
+   }
+
+   .btnQR{
+      background: #eb94ff85; 
+      width: 50%; 
+      height: 40px; 
+      text-align: center; 
+      padding: 8px; 
+      font-weight: bold;
+      border-radius: 10px; 
+      overflow: hidden;
+      margin-left: 20%;
    }
 
    .cardWallet {
