@@ -1,14 +1,12 @@
 function GuardarPlanActivado() {
 
     var idpersona = localStorage.getItem("idPersona");
-
+    
     var idPlan = localStorage.getItem("idPlan0");
 
     console.log(idPlan);
-
-
     const GuardarPlan = {
-        
+
         IdPlan: idPlan,
         IdPerson: idpersona,
         InvestedAmount: $("#montoOperarPlan0").val(),
@@ -17,7 +15,7 @@ function GuardarPlanActivado() {
     }
 
     guardar(GuardarPlan);
-   
+
 }
 
 function GuardarPlanActivado1() {
@@ -28,7 +26,7 @@ function GuardarPlanActivado1() {
 
     console.log(idPlan);
     const GuardarPlan = {
-        
+
         IdPlan: idPlan,
         IdPerson: idpersona,
         InvestedAmount: $("#montoOperarPlan1").val(),
@@ -37,7 +35,7 @@ function GuardarPlanActivado1() {
     }
 
     guardar(GuardarPlan);
-   
+
 }
 
 function GuardarPlanActivado2() {
@@ -48,7 +46,7 @@ function GuardarPlanActivado2() {
 
     console.log(idPlan);
     const GuardarPlan = {
-        
+
         IdPlan: idPlan,
         IdPerson: idpersona,
         InvestedAmount: $("#montoOperarPlan2").val(),
@@ -57,7 +55,7 @@ function GuardarPlanActivado2() {
     }
 
     guardar(GuardarPlan);
-   
+
 }
 
 function GuardarPlanActivado3() {
@@ -68,7 +66,7 @@ function GuardarPlanActivado3() {
 
     console.log(idPlan);
     const GuardarPlan = {
-        
+
         IdPlan: idPlan,
         IdPerson: idpersona,
         InvestedAmount: $("#montoOperarPlan3").val(),
@@ -77,7 +75,7 @@ function GuardarPlanActivado3() {
     }
 
     guardar(GuardarPlan);
-   
+
 }
 
 function GuardarPlanActivado4() {
@@ -88,7 +86,7 @@ function GuardarPlanActivado4() {
 
     console.log(idPlan);
     const GuardarPlan = {
-        
+
         IdPlan: idPlan,
         IdPerson: idpersona,
         InvestedAmount: $("#montoOperarPlan4").val(),
@@ -97,7 +95,7 @@ function GuardarPlanActivado4() {
     }
 
     guardar(GuardarPlan);
-   
+
 }
 
 function GuardarPlanActivado5() {
@@ -108,7 +106,7 @@ function GuardarPlanActivado5() {
     console.log(idPlan);
 
     const GuardarPlan = {
-        
+
         IdPlan: idPlan,
         IdPerson: idpersona,
         InvestedAmount: $("#montoOperarPlan5").val(),
@@ -117,5 +115,5 @@ function GuardarPlanActivado5() {
     }
 
     guardar(GuardarPlan);
-   
+
 }
