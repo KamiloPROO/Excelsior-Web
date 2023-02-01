@@ -1,0 +1,53 @@
+.cardWithDraw {
+    box-shadow: 0 6px 10px 0 rgb(136, 14, 173);
+    transition: 0.3s;
+    display: block;
+    margin-left: 25%;
+    width: 46%;
+    height: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.inputIngreWallet {
+
+    width: 80%;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border: solid 2px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(126, 121, 121);
+    border-left-color: transparent;
+
+}
+
+.inputIngreAmount{
+    width: 80%;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border: solid 2px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(126, 121, 121);
+    border-left-color: transparent;
+}
+
+.btnWithGreen{
+
+    background: #035500;
+    width: 50%;
+    font-size: 20px;
+    color: #fff;
+    height: 40px;
+    border-radius: 8%;
+    margin-left: 0%;
+
+}

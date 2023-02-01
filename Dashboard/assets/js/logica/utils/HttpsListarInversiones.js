@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', e => {
                         </div>
                         <br>
 
-                        <button class="btnWith">WITHDRAW</button>
+                        <button class="btnWith" onclick="pasar()" >WITHDRAW</button>
                         <br>
                         <br>
                     </div>
