@@ -481,10 +481,30 @@ a {
 
 }
 
+.cardInversionWith {
+    box-shadow: 0 4px 8px 0 rgb(2, 19, 255);
+    transition: 0.3s;
+    display: flex;
+    overflow: hidden;
+    /* margin-left: 7%; */
+    margin-top: 2%;
+
+}
+
 .cardsInversion {
     overflow: auto;
     display: flex;
     width: 500px;
+    /* position: relative; */
+
+}
+
+.cardsInversionWithDrawal {
+    overflow: auto;
+    padding: 1%;
+    width: 100%;
+    height: 600px;
+    margin-left: 27%;
     /* position: relative; */
 
 }
@@ -615,6 +635,10 @@ a {
 }
 
 .planess {
+    width: 450px;
+}
+
+.planessWith {
     width: 450px;
 }
 
@@ -996,4 +1020,24 @@ STYLE OF PLANS VIEW
     margin-left: 36%;
     padding: 5px ;
     background: rgb(255, 255, 255);
+}
+
+.moverCapital{
+    display: flex;
+    margin-left: 40%;
+}
+
+.btnWith{
+    background: #220055;
+    width: 50%;
+    font-size: 20px;
+    color: #fff;
+    height: 40px;
+    border-radius: 8%;
+    margin-left: 0%;
+}
+
+.adentro{
+   
+    width: 100%;
 }

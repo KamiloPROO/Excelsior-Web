@@ -63,11 +63,11 @@
                         diversity_3</span>
                     <h3>My Team</h3>
                 </a>
-                <a href="wallet.html" class="active"><span class="material-icons-sharp">
+                <a href="wallet.html"><span class="material-icons-sharp">
                         account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
-                <a href="withdrawalRequest.html"><span class="material-icons-sharp">
+                <a href="withdrawalRequest.html" class="active"><span class="material-icons-sharp">
                         account_balance_wallet</span>
                     <h3>withdrawal Requests</h3>
                 </a>
@@ -104,45 +104,23 @@
             <div>
                 <br>
                 <!-- <h1 class="camilo" id="crearM">Crear Cuenta Tron</h1> -->
-                <h1 id="cuentaM">Cuenta Tron</h1>
+                <h1 id="cuentaM">Withdrawal Requests</h1>
                 <br>
-                <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
-                <br>
+
+                <div class="moverCapital">
+                    <h1>Earned Capital:</h1>
+                    <h1 style="margin-left: 2%;" id="capital">Earned Capital</h1>
+                </div>
                 <br>
                 <h2 class="camiloOcultar" id="respuesta">
             </div>
 
 
-            <div class="cardWallet" id="containerCardTron"
-                style="background:url(./assets/images/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
-                <h3 id="nombreUser" class="moverRefe">Juan Camilo</h3>
-                <h3>_____________________________________________</h3>
-                <div class="contaSaldo">
-                    <div style="display: flex; overflow: hidden;">
-                        <h1 style="margin-left: 40px; color: rgb(15, 223, 153);">$</h1>
-                        <h1 style="margin-left: 5px; color: rgb(15, 223, 153); text-align: center;"
-                            id="saldoUsdtWallet">Saldo</h1>
-                    </div>
-                    <h1>USDT</h1>
-                </div>
-                <div class="containerFechaCreada">
-                    <b class="fechaCreada" id="fechaCreada">fecha creada</b>
-                    <h3 style="font-weight: bolder; margin-left: 5px;">Creada</h3>
-                    <br>
-                </div>
-                <div class="containerFechaActu">
-                    <b class="fechaCreada" id="fechaActua">fecha creada</b>
-                    <h3 style="font-weight: bolder; margin-left: 5px;">Actualizada</h3>
-                    <br>
-                </div>
+            <div class="cardsInversionWithDrawal" id="product-list">
+
             </div>
 
-            <div style="margin-top: 120px;">
-
-                <!-- <button type="button" id="GeneramosRandom">Generar</button> -->
-                <a href="qr.html" type="button" id="GeneramosRandom" class="btnQR">PAYMENT GATEWAY</a>
-            </div>
-
+            
 
             <div class="right2">
                 <div class="top">
@@ -179,17 +157,9 @@
 
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/orders.js"></script>
-    <!-- <script src="./assets/js/app.js"></script> -->
 
-    <script src="./assets/js/logica/routes/routes.js"></script>
 
-    <!-- <script src="./assets/js/logica/datos/cuentaTronDto.js"></script>
-    <script src="./assets/js/logica/utils/HttpsClientCuentaTron.js"></script>
-    <script src="./assets/js/logica/business/crearCuentaBussiness.js"></script>
-    <script src="./assets/js/logica/controller/cuentaTronController.js"></script>
-    <script src="./assets/js/logica/event/crearCuentaEvents.js"></script> -->
-
-    <script src="./assets/js/logica/utils/HttpsClientsListarTron.js"></script>
+    <script src="assets/js/logica/utils/HttpsListarInversiones.js"></script>
 
 
 </body>

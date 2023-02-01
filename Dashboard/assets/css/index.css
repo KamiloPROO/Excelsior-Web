@@ -278,6 +278,20 @@
 
 @media (max-width: 500px) {
 
+   .cardsInversionWithDrawal{
+      margin-left: 11%;
+     overflow-x: hidden;
+   }
+
+   .planessWith{
+      
+   }
+
+   .cardInversionWith{
+      width: 87%;
+    
+   }
+
    .cuerpo {
       width: 100%;
    }
