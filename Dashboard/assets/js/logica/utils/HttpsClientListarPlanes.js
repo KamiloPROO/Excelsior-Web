@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', e => {
             const salMin1 = data[1].RangoInicial
             const salMax1 = data[1].RangoFinal
 
-            localStorage.setItem("salMini1",salMin1);
-            localStorage.setItem("salMaxi1",salMax1);
+            localStorage.setItem("salMinimo1",salMin1);
+            localStorage.setItem("salMaximo1",salMax1);
 
             localStorage.setItem("idPlan1",idPlan1);
             ComPlan1.textContent = `${data[1].Descripcion}`
