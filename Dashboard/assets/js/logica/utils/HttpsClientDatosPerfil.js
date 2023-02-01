@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', e => {
                 // const naci = document.getElementById('fecha_nacimiento')
                 const docu = document.getElementById('tipo_documento')
                 const tel = document.getElementById('telefono')
+                const telLink = document.getElementById("telefonoLink")
                 // const dire = document.getElementById("direccion")
 
 
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', e => {
                 // naci.textContent = `${data.FECHA_NACIMIENTO}`
                 docu.textContent = `${data.DOCUMENTO}`
                 tel.textContent = `${data.TELEFONO}`
+                telLink.textContent = `${data.TELEFONO}`
                 // dire.textContent = `${data.DIRECCION}`
 
 
