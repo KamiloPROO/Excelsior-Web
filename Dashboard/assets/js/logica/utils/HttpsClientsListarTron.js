@@ -61,9 +61,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
                 const referen = data.Referencia;
                 const balanInvest = data.BalanceInvest;
+                const saldoVirtual = data.SaldoVirtual;
 
                 localStorage.setItem("numReferen", referen);
                 localStorage.setItem("balInvest", balanInvest);
+                localStorage.setItem("saldoWallet", saldoVirtual);
 
 
                 respu.textContent = nomWallet

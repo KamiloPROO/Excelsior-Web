@@ -21,14 +21,17 @@ document.addEventListener('DOMContentLoaded', e => {
 
   const nombre = document.getElementById("name")
   const balanceinvest = document.getElementById("balanceInvest")
+  const balanceWallet = document.getElementById("saldoWallet")
  
   var namee = localStorage.getItem("PrimerNombre")
 
   var resBalnace = localStorage.getItem("balInvest")
+  const saldoWall = localStorage.getItem("saldoWallet")
   
 
   nombre.textContent = namee;
   balanceinvest.textContent = resBalnace;
+  balanceWallet.textContent = saldoWall;
  
 
   console.log(namee);
